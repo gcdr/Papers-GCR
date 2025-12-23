@@ -1,1 +1,25 @@
-# Papers-GCR
+= Papers-GCR Repository
+Glen Ritchie
+v1.0, Dec 2025
+:toc:
+
+== Introduction
+
+* _Glen Ritchie papers repository: Papers-GCR_
+
+=== Statistics
+
+* Repository Started: Dec 2025 - ..
+* Base Name: ??
+
+=== License
+
+* Owned by Glen Ritchie, (c) 2025 - ..
+
+== Who do I talk to?
+
+* The Maintainer.
+
+== Why Support Open Source?
+
+* _If I have to tell you this? Why are you here._
