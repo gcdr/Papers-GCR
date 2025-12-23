@@ -1,0 +1,25 @@
+% file: clever-ref.sty
+% file: xxxxxx.texK
+% prg: left blank on purpose.
+%
+% Purpose: cleveref.sty (called after) supporting style file.
+%
+% ============================================================
+
+\crefname{equation}{Eqn.}{Eqns.}
+\crefname{figure}{Fig.}{Figs.}
+
+%\crefname{section}{§}{§§}  \S is chapter symbol, without 'inputenc' package
+%\Crefname{section}{§}{§§}
+\crefname{section}{section \S}{section \S\S}
+\Crefname{section}{Section \S}{Section \S\S}
+
+%\crefname{table}{table}{tables}
+\crefname{table}{Table}{Tables}
+\Crefname{Table}{Table}{Tables}
+
+% ------------------------------------------------------------------
+
+% ============================================================
+
+% ---- end of file.
