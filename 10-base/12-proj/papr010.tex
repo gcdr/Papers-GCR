@@ -11,6 +11,7 @@
 \usepackage{setspace,graphics,rotating,amsthm}
 \usepackage{lipsum,hyperref,hyperxmp,graphicx}
 % csquotes conflicts with 'graphicx', if it is used?
+% graphicx best for PDF import with XeLaTeX or EPS with latex only build program.
 \usepackage{enumerate,xspace,calc,pifont,caption}
 
 \usepackage{tikz,pgfplots,pgfplotstable}
@@ -40,7 +41,31 @@ Writing% <-- problem
 \usepackage{cleveref}% Important - to be last one - called.
 \usepackage{clever-ref}
 
+% ============================================================
+% (switch to other template!) \usepackage{euler-sym}
+\usepackage{plain-sym}
+\usepackage{writeB-macs}
+
+\usepackage{pdfpages}
+
+%\let\defpgsection\section
+%\renewcommand{\section}{\newpage\defpgsection}%
+% If want each section, on it's own page.
+
+\newcommand{\aadots}{\dots\,}%
+\newcommand{\aabart}{---\,\,}%
+
+% Try to avoid sfrac from xfrac package.
+\newcommand{\slfrac}[2]{\,^{#1}\!/_{#2}}
+
+% \setstretch{0.95}
+% \setstretch{1.00}
 \doublespacing
+
+\pagestyle{fancy}
+\fancyhf{}              % clear all header and footer fields
+\fancyhead[R]{\thepage} % page number in upper right
+\renewcommand{\headrulewidth}{0pt} % optional: remove header line
 
 % ============================================================
 
