@@ -1,0 +1,126 @@
+% file: euler-sym.sty
+% file: xxxxxx.texK
+% prg: left blank on purpose.
+%
+% Purpose: Onoing 'personal' / 'mathematical' macro / symbol names
+% with Euler font - Standard (for fairs-03).
+%
+% ============================================================
+
+\newcommand{\grbula}{$\blacktriangle$\xspace}%
+\newcommand{\grbulb}{$> > >$\xspace}%
+\newcommand{\grbulc}{$\bullet$\xspace}%
+\newcommand{\seplinea}{\centerline{******} \ }%
+
+\newcommand{\grbuli}{$\bullet$\xspace}%
+% \newcommand{\grbulj}{$\blacksquare$\xspace}%
+
+\newcommand{\grbuma}{$-$\xspace}%
+\newcommand{\grbumb}{$=$\xspace}%
+\newcommand{\grbumc}{$\equiv$\xspace}%
+\newcommand{\grbumd}{$\triangleright$\xspace}%
+
+\newcommand{\partialSep}{\ \\ \centerline{....................}}%
+\newcommand{\fullSep}{\ \\ \centerline{- - - - - - - - - - - - - - - - - - - -}}%
+\newcommand{\doubleSep}{\ \\ \centerline{====================}}%
+
+% ============================================================
+
+\newcommand{\given}{|}%
+\newcommand{\xbar}{\bar{x}}%
+\newcommand{\ybar}{\bar{y}}%
+\newcommand{\nhat}{\hat{N}}%
+% personals
+\newcommand{\cbigphi}{\varphi}%
+\newcommand{\creciphi}{\phi}%
+\newcommand{\creciphr}{\hat\phi}% WE SHOULD remove this, in time.
+\newcommand{\creciphir}{\hat\phi}%
+\newcommand{\csmalle}{\overline{e}}%
+\newcommand{\degree}{^{\circ}}%
+
+\newcommand{\safib}{2-Step Fibonacci-like\xspace}%
+\newcommand{\saluc}{2-Step Lucas\xspace}%
+\newcommand{\sanpat}{Number pattern\xspace}%
+
+% A very personal macro define. GR
+\newcommand{\bkatitle}{``Even Numbers, Which Are Odd''\xspace}%
+\newcommand{\mtpascal}{Pascal's Triangle\xspace}%
+\newcommand{\mttstruct}{T-structure\xspace}%
+\newcommand{\mtgodel}{G\"{o}del\xspace}%
+\newcommand{\mterdos}{Erd\H{o}s\xspace}%
+\newcommand{\mtnline}{n-line $\leftrightarrow$ c-perimeter analogy\xspace}%
+\newcommand{\mtnblack}{Black\_Box\xspace}%
+
+% ------------------------------------------------------------------
+
+\newcommand{\rolez}{\rule[.0in]{6.0in}{.04in}}% FOR A BAR ACROSS
+\newcommand{\rolec}{\rule[.0in]{6.0in}{0.5pt}}% FOR A BAR ACROSS
+\newcommand{\roled}{\hspace{2.0in}\rule[.0in]{2.0in}{0.35pt}}% FOR A BAR ACROSS
+
+% deprecated \newcommand{\rolep}{\hspace{2.0in}\rule[.0in]{2.0in}{0.05pt}}% FOR A BAR ACROSS
+\newcommand{\rolep}{{\centerline{\rule[.0in]{2.0in}{0.05pt}}}}%
+
+% ------------------------------------------------------------------
+
+% glossary helper symbol definition.
+\def\Glosgmark{ $ ^{\dagger} $ }
+% goshort2.sty has \Glosgr{} definition.
+
+% The !_ high underbar: definition symbol.
+\def\gsymdf{ ! $ ^{-} $ }
+
+\def\publisha{Leanpub Company}
+\def\publishb{Bismarck, North Dakota}
+% \newcommand{\publisher}{Floating}
+
+% Ok code, below. Works, just doing manually.
+\long\def\Glosgr#1#2{\noindent\begin{tabular}{p{1.0in}p{4.0in}}%
+  \parbox{1.0in}{\small{\bf{#1}}} & \parbox{4.0in}{#2}  \\
+\end{tabular}%
+}
+
+% ------------------------------------------------------------------
+
+% Use by saying \strike{The words.} is a macro from MIT.tex.
+\newbox\strikebox
+\def\strike#1{\setbox\strikebox \hbox{#1}%
+\hbox{\raise0.5ex\hbox to 0pt{\vrule height 0.4pt width \wd\strikebox\hss}%
+\copy\strikebox}}
+
+% ------------------------------------------------------------------
+% ------------------------------------------------------------------
+% ------------------------------------------------------------------
+\DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathx}{m}{n}{
+  <5> <6> <7> <8> <9> <10>
+  <10.95> <12> <14.4> <17.28> <20.74> <24.88>
+  mathx10
+}{}
+\DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
+\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
+
+% ------------------------------------------------------------------
+
+\DeclareFontFamily{U}{mathb}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathb}{m}{n}{
+  <5> <6> <7> <8> <9> <10> gen * mathb
+  <10.95> mathb10 <12> <14.4> <17.28> <20.74> <24.88> mathb12
+}{}
+% \DeclareFontEncoding{U}{}{}
+\DeclareFontSubstitution{U}{mathb}{m}{n}
+\DeclareSymbolFont{mathb}{U}{mathb}{m}{n}
+\DeclareMathSymbol{\varxsdfs}{2}{mathb}{"0D}
+\newcommand{\grbulj}{$\varxsdfs{}$\,}
+
+\DeclareFontEncoding{LS1}{}{}
+\DeclareFontSubstitution{LS1}{stixbb}{m}{n}
+\DeclareSymbolFont{symbols3}       {LS1}{stixbb}   {m} {n}
+\DeclareMathDelimiter{\ZZnset} {\mathalpha}{symbols3}{"4E}{symbols3}{"4E}
+\DeclareMathDelimiter{\ZZrset} {\mathalpha}{symbols3}{"52}{symbols3}{"52}
+\DeclareMathDelimiter{\ZZzset} {\mathalpha}{symbols3}{"5A}{symbols3}{"5A}
+\DeclareMathDelimiter{\ZZqset} {\mathalpha}{symbols3}{"51}{symbols3}{"51}
+\DeclareMathDelimiter{\ZZcset} {\mathalpha}{symbols3}{"43}{symbols3}{"43}
+
+% ============================================================
+
+% ---- end of file.
