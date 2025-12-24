@@ -2,25 +2,29 @@
 % -
 % Copyright - Glen Ritchie 2025
 % License terms: MIT Free for template
-
 \documentclass[12pt]{article}
+\usepackage[small,sf,bf]{titlesec}%0pt
 \usepackage{amsmath,amssymb,amsfonts,latexsym}
-%\usepackage[small,sf,bf]{titlesec}%0pt
 \usepackage[tmargin=1.0in,bmargin=1.0in,lmargin=1.0in,rmargin=1.0in]{geometry}
 
-\usepackage{setspace,lipsum}
+% ============================================================
+\usepackage{setspace,graphics,rotating,amsthm}
+\usepackage{lipsum,hyperref,hyperxmp,graphicx}
+% csquotes conflicts with 'graphicx', if it is used?
+\usepackage{enumerate,xspace,calc,pifont,caption}
 
-%\numberwithin{equation}{section}
-
+% ============================================================
 \usepackage{cleveref}% Important - to be last one - called.
 \usepackage{clever-ref}
 
 \doublespacing
 
+% ============================================================
+
 \begin{document}
     
     \section{Introduction}
-    \label{sec:02}
+    \label{sec:01}
     
     \lipsum
     
