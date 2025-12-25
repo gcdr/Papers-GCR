@@ -1,0 +1,400 @@
+% file: write-macs.sty
+% file: xxxxxx.texK
+% prg: left blank on purpose.
+%
+% Purpose: Onoing 'personal' / 'mathematical' macro / symbol names
+% with Standard font (for fairs-03).
+%
+% Please NOTE: These commands are for pure words. No functions with
+% arguments - what so ever.
+%
+% ============================================================
+
+\newcommand{\grlatex}{\LaTeX\xspace}%
+\newcommand{\grtex}{\TeX\xspace}%
+% Added 12-31-2016
+\newcommand{\pdflatex}{pdf\LaTeX\xspace}%
+\newcommand{\pdftex}{pdf\TeX\xspace}%
+\newcommand{\xelatex}{X\lower.5ex\hbox{\kern-0.15em\reflectbox{E}}\kern-0.1em\LaTeX\xspace}%
+\newcommand{\context}{Con\TeX{t}\xspace}%
+
+\newcommand{\TaKLogo}{{\large{T}}\kern-0.0866em\lower0.35ex\hbox{\scriptsize{A}}%
+\kern-0.083em\lower-0.166em\hbox{K}\@\xspace}
+
+% Command for !gsymcphiss production.
+\newcommand{\HiSSLogo}{{\large{H}}\kern0.05em\lower0.42ex\hbox{\scriptsize{I}}%
+\kern0.06em\hbox{S}\kern0.1em\hbox{\small{S}}\kern0.35em\hbox{\scriptsize{v}}%
+\kern-0.03em\hbox{\large{\it{2}}\kern0.166em}\@\xspace}
+
+% ============================================================
+
+% Template for commands: (1) Helvetica. (2) Computer Modern (Roman) Bold
+% BAD \newcommand{\ffnte}{phv}% 1
+% \newcommand{\ffnte}{cmr}% 1
+% \newcommand{}{}%
+% \newcommand{}{}%
+% \newcommand{}{}%
+
+\newcommand{\sszsizb}{0.90}%
+% \newcommand{\sszsizb}{}%
+% \newcommand{\sszsizb}{}%
+
+% \def\abhardc{\fontfamily{\ffnte}}%
+% \def\abhardc{\fontfamily{\ffnte}\textbf}%
+% \def\abhardc{\fontfamily{\ffnte}\textbf}%
+% % {\setlength{\fontsize}{0.5\baselineskip}}{\setlength{\fontsize}{0.6\baselineskip}}
+
+% \def\abhardc{\fontfamily{\ffnte}{\setlength{\fontsize}{0.5\baselineskip}{0.6\baselineskip}}\textbf}%
+
+% ============================================================
+
+% Command for !gsymcptav production.
+\newcommand{\tavLogo}{{\large{t}}\kern+0.06em\lower-0.14ex\hbox{\small{a}}%
+\kern+0.04em\lower0.09em\hbox{\large{v}\kern+0.04em}\@\xspace}
+% Command for !gsymcptavvox production.
+\newcommand{\tavVox}{{\large{t}}\kern+0.06em\lower-0.14ex\hbox{\small{a}}%
+\kern+0.04em\lower0.09em\hbox{\large{v}\kern+0.04em}%
+{\large{V}{o}{x}{\small{x}}}\@\xspace}
+
+% Command for !gsymcpmdoc production.
+\newcommand{\mathDOCLogo}{{M}\kern+0.16em\lower-0.03ex\hbox{\small{ath}}%
+\kern+0.10em\lower+0.25ex\hbox{\scriptsize{DOC}}%
+\kern+0.06ex\lower+0.02ex\hbox{\scriptsize{*}}\@\xspace}
+
+% ============================================================
+
+\newcommand{\tabgraa}{\makebox[2.0in][l]}%
+\newcommand{\tabgrab}{\makebox[2.5in][l]}%
+\newcommand{\tabgrac}{\makebox[3.0in][l]}%
+\newcommand{\tabgrak}{\makebox[3.5in][l]}%
+
+\newcommand{\tabgrad}{\makebox[4.0in][l]}%
+\newcommand{\tabgrae}{\makebox[5.0in][l]}%
+\newcommand{\tabgraf}{\makebox[6.0in][l]}%
+\newcommand{\tabgrag}{\makebox[7.0in][l]}%
+\newcommand{\tabgrah}{\makebox[1.0in][l]}%
+
+% Clever! I understand \pagewidth & \textwidth. Ratio 0.65
+\newcommand{\tabgrba}{\makebox[(0.50\textwidth)-0.25in][l]}%
+\newcommand{\tabgrbc}{\makebox[(0.325\textwidth)-0.166in][l]}%
+\newcommand{\tabgrbd}{\makebox[\textwidth-0.25in][l]}%
+
+% ------------------------------------------------------------------
+
+% No Use!!! (in .tex file only) \newcommand{\keybullet}{$\bullet$}
+
+% User typographic command "to print" a tilde (as best possible) in Latex.
+\newcommand{\tildeit}{{\~\,}\xspace}%
+
+% Note: Need to add, "pifont" package to any manuscript using these 2 symbols.
+\newcommand{\cmark}{\ding{51}\xspace}%
+%\newcommand{\xmark}{\ding{55}\xspace}% FROM f67 Iduko
+\newcommand{\xmark}{{\normalsize\ding{54}}\xspace}%
+%\newcommand{\xmark}{{\Large\ding{54}}\xspace}%
+
+% ---
+\newcommand{\pimarkaa}{\ding{108}}% black circle
+\newcommand{\pimarkab}{\ding{109}}% fill-in circle
+\newcommand{\pimarkac}{\ding{110}}% black square
+\newcommand{\pimarkad}{\ding{111}}% normal to-do square fill-in
+\newcommand{\pimarkae}{\ding{112}}% bottom-up to-do square fill-in
+\newcommand{\pimarkaf}{\ding{112}}% variant 2, square fill-in
+\newcommand{\pimarkag}{\ding{114}}% variant 2, bottom-up square fill-in
+\newcommand{\pimarkah}{\ding{115}}% black triangle
+\newcommand{\pimarkai}{\ding{116}}% points down, black triangle
+\newcommand{\pimarkaj}{\ding{117}}% black square diamond
+\newcommand{\pimarkak}{\ding{118}}% four pc.s black square diamond
+\newcommand{\pimarkal}{\ding{119}}% Quad 1/4 half-circle / black moon
+%
+% Removed the \xspace in pimarkaa-NAMES above. So, properly used when local alias.
+\newcommand{\aabkksquare}{\pimarkaa\xspace}%
+\newcommand{\aabkkcircle}{\pimarkac\xspace}%
+% \newcommand{\aalouddiamond}{\pimarkah\xspace}%
+% \newcommand{\aabkkdntriangle}{\pimarkai\xspace}%
+\newcommand{\aatodosquare}{\pimarkad\xspace}%
+\newcommand{\aatodocircle}{\pimarkab\xspace}%
+% ---
+
+\newcommand{\pimarkbclubs}{\ding{168}\xspace}% pifonts: card deck suits.
+\newcommand{\pimarkbdiamonds}{\ding{169}\xspace}%
+\newcommand{\pimarkbhearts}{\ding{170}\xspace}%
+\newcommand{\pimarkbspades}{\ding{171}\xspace}%
+
+% XX (1) Seems for "symbol commands" xspace not working, as should. {} was
+% ..required, when had \xspace in symx bslash.
+% (2) Fails: if not texttt; charset issue.
+\newcommand{\symxbslash}{\texttt{\symbol{92}}}% backslash
+
+\newcommand{\symxlbrace}{\symbol{91}}% left bracket
+\newcommand{\symxrbrace}{\symbol{93}}% right bracket
+
+\newcommand{\symxforslash}{\symbol{47}}% forward slash
+\newcommand{\symxpiping}{\symbol{124}}% piping symbol
+\newcommand{\symxtilde}{\symbol{126}}% tilde
+
+%\newcommand{\symx}{\symbol{92}\xspace}% bad! (not) backslash
+%
+\newcommand{\aacrt}{\dag\xspace}%
+\newcommand{\aacrr}{\( ^{\textrm{\ding{71}}} \)\xspace}%
+\newcommand{\aain}{\( ^{\prime\prime} \)\,}%
+\newcommand{\aaft}{\( ^{\prime} \)\,}%
+
+% ============================================================
+
+\newcommand{\adegreez}[1]{\ensuremath{#1^\circ}\xspace}%
+\newcommand{\adegrccz}[1]{\ensuremath{#1^\circ\, \mathrm{ C}}\xspace}%
+\newcommand{\adegrffz}[1]{\ensuremath{#1^\circ\, \mathrm{ F}}\xspace}%
+\newcommand{\adegrkkz}[1]{\ensuremath{#1^\circ\, \mathrm{ K}}\xspace}%
+
+% ---- DELIMITER PAIRS ----
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}%
+\newcommand{\ceil}[1]{\lceil #1 \rceil}%
+\newcommand{\seq}[1]{\langle #1 \rangle}%
+\newcommand{\set}[1]{\{ #1 \}}%
+\newcommand{\abs}[1]{\mathopen| #1 \mathclose|}%			% use instead of $|x|$ 
+\newcommand{\norm}[1]{\mathopen\| #1 \mathclose\|}%		% use instead of $\|x\|$ 
+\newcommand{\indic}[1]{\big[#1\big]}%		% indicator variable; Iverson notation
+								% e.g., Kronecker delta = [x=0]
+
+% --- Self-scaling delmiter pairs ---
+\newcommand{\Floor}[1]{\left\lfloor #1 \right\rfloor}%
+\newcommand{\Ceil}[1]{\left\lceil #1 \right\rceil}%
+\newcommand{\Seq}[1]{\left\langle #1 \right\rangle}%
+\newcommand{\Set}[1]{\left\{ #1 \right\}}%
+\newcommand{\Abs}[1]{\left| #1 \right|}%
+\newcommand{\Norm}[1]{\left\| #1 \right\|}%
+\newcommand{\Paren}[1]{\left( #1 \right)}%		% need better macro name!
+\newcommand{\Brack}[1]{\left[ #1 \right]}%		% need better macro name!
+\newcommand{\Indic}[1]{\left[ #1 \right]}%		% indicator variable; Iverson notation
+
+% ============================================================
+
+\newcommand{\Poincare}{Poincar\'{e}}%
+\newcommand{\Gratzer}{Gr\"{a}t\-zer\xspace}%
+\newcommand{\Edouard}{\'{E}douard}%
+\newcommand{\Lame}{Lam\'{e}}%
+\newcommand{\Universita}{Universit\'{a}}%
+\newcommand{\Polya}{P\'{o}lya\xspace}%
+
+\newcommand{\naive}{na\"{\i}ve}%
+\newcommand{\Naive}{Na\"{\i}ve}%
+\newcommand{\naively}{na\"{\i}vely}%
+\newcommand{\Naively}{Na\"{\i}vely}%
+\newcommand{\resume}{r\'{e}sum\'{e}}%
+\newcommand{\Resume}{R\'{e}sum\'{e}}%
+\newcommand{\cafe}{caf\'{e}}%
+
+% Added 10-30-2017
+\newcommand{\cliche}{clich\'{e}}%
+
+\newcommand{\Elnino}{El Ni\~{n}o\xspace}%
+\newcommand{\Lanina}{La Ni\~{n}a\xspace}%
+
+\newcommand{\latietal}{\emph{et~al.}}%
+\newcommand{\latiie}{\emph{i.e.}}%
+%\newcommand{\latiie}{\textcolor{red}{that is}}%
+\newcommand{\latieg}{\emph{e.g.}}%
+%\newcommand{\latieg}{\textcolor{red}{for example}}%
+
+\newcommand{\vitae}{vit\ae{}\xspace}%
+\newcommand{\apriori}{\emph{a~priori}}%
+\newcommand{\aposteriori}{\emph{a~posteriori}}%
+
+% ------------------------------------------------------------------
+% Font-Master commands. - \ffnte
+
+% \newcommand{\linux}{{\setlength{\fontsize}{14.0pt}{16.0pt}%
+% \fontfamily{phv}\textbf{\selectfont{LINUX}}}}%
+\newcommand{\ffntsa}{0.60}%
+\newcommand{\ffntsd}{0.80}%
+
+\newcommand{\ffnte}{\fontfamily{phv}}%
+
+% \newcommand{\p}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+% {\ffntsa\baselineskip}\ffnte\textbf{\selectfont{x2}}}\xspace}%
+
+% ------------------------------------------------------------------
+
+\newcommand{\linux}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{LINUX}}}\xspace}%
+% {\ffntsa\baselineskip}\ffnte\textbf{\selectfont{LINUX}}}\xspace}%
+\newcommand{\abunix}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Unix}}}\xspace}%
+
+\newcommand{\ubuntu}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{ubuntu}}}\xspace}%
+\newcommand{\freebsd}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{FreeBSD}}}\xspace}%
+
+\newcommand{\cplusplus}{C\raisebox{0.5ex}{\tiny\textbf{++}}\xspace}%
+
+\newcommand{\python}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Python}}}\xspace}%
+
+\newcommand{\abpython}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Python}}}\xspace}%
+\newcommand{\abruby}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Ruby}}}\xspace}%
+\newcommand{\ablua}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Lua}}}\xspace}%
+\newcommand{\abdelphi}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Delphi}}}\xspace}%
+
+\newcommand{\abjava}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Java}}}\xspace}%
+\newcommand{\abjscript}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{JavaScript}}}\xspace}%
+\newcommand{\abscheme}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Scheme}}}\xspace}%
+
+% The old name for DrRacket -- today.
+\newcommand{\abdrscheme}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{DrScheme}}}\xspace}%
+
+\newcommand{\abdrracket}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{DrRacket}}}\xspace}%
+\newcommand{\abmarkdown}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Markdown}}}\xspace}%
+\newcommand{\abpascal}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Pascal}}}\xspace}%
+
+% ------------------------------------------------------------------
+
+\newcommand{\abvr}{\italxstyle{Voc-Rehab}\xspace}%
+\newcommand{\abVR}{\italxstyle{Vocational~Rehabilitation}\xspace}%
+\newcommand{\absoc}{\italxstyle{Social~Services}\xspace}%
+% \newcommand{\aalinked}{{Linked-\smallcxstyle{in}}\xspace}%
+\newcommand{\ablink}{Linked-in\xspace}%
+
+\newcommand{\abjule}{\texttxstyle{Jules}\xspace}%
+\newcommand{\abpers}{\texttxstyle{Perseus}\xspace}%
+\newcommand{\abhulk}{\texttxstyle{Hulk}\xspace}%
+\newcommand{\abcoder}{\texttxstyle{Coder}\xspace}%
+
+\newcommand{\abdoku}{{\commdxstyle{DokuWiki}}\xspace}%
+\newcommand{\abjeky}{{\commdxstyle{Jekyll}}\xspace}%
+\newcommand{\abproc}{{\commdxstyle{Processing}}\xspace}%
+\newcommand{\abboka}{\texttxstyle{Book40}\xspace}%
+
+\newcommand{\abscr}{{\commdxstyle{Scrivener}}\xspace}%
+\newcommand{\ablisp}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{LISP}}}\xspace}%
+\newcommand{\abperl}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Perl}}}\xspace}%
+
+\newcommand{\abemacs}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Emacs}}}\xspace}%
+\newcommand{\abgvim}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{gvim}}}\xspace}%
+% vi was before vi(m); vi Improved. However, I am a vim user, not (older) vi.
+\newcommand{\abvim}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{vim}}}\xspace}%
+
+\newcommand{\abebook}{e-Book\xspace}%
+\newcommand{\abepub}{ePUB\xspace}%
+\newcommand{\abunderwiggle}{\textvisiblespace\xspace}%
+
+% ------------------------------------------------------------------
+
+\newcommand{\Zurich}{Z\"{u}rich}%
+\newcommand{\Hanoi}{Hano\"{\i}\xspace}%
+\newcommand{\postscript}{{\small\fontfamily{\ffnte}\selectfont{PostScript}}\xspace}%
+\newcommand{\p}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{x2}}}\xspace}%
+
+\newcommand{\Poussin}{Vall\'{e}e-Poussin\xspace}%
+
+% ---
+\newcommand{\abgtd}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte\textbf{\selectfont{GTD}}}\xspace}%
+\newcommand{\abgtD}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte\textbf{\selectfont{G.T.D.}}}\xspace}%
+\newcommand{\abtodo}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte\textbf{\selectfont{To-do}}}\xspace}%
+\newcommand{\abTodo}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte\textbf{\selectfont{to-do}}}\xspace}%
+\newcommand{\abtodO}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte\textbf{\selectfont{TO-DO}}}\xspace}%
+% ---
+\newcommand{\acgtd}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{GTD}}}\xspace}%
+\newcommand{\acgtD}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{G.T.D.}}}\xspace}%
+\newcommand{\actodo}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{To-do}}}\xspace}%
+\newcommand{\acTodo}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{to-do}}}\xspace}%
+\newcommand{\actodO}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{TO-DO}}}\xspace}%
+
+% ------------------------------------------------------------------
+\newcommand{\sindd}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte\textbf{\selectfont{InDesign}}}\xspace}%
+
+% ------------------------------------------------------------------
+% f02
+%\newcommand{\TikZ}{\Huge{Ti\textcolor{orange}{\emph{k}}Z}}%
+% \newcommand{\TikZ}{Ti\textcolor{orange}{\emph{k}}Z}%
+\newcommand{\TikZ}{Ti\emph{k}Z}%
+
+% (what?) \newcommand{\scaledmag}[#1]{ scaled \magstep #1}%
+
+% \newcommand{\LaTeX}{L\kern-5.6pt\raise4pt\hbox{\smalltitle A}\kern-1.6pt\TeX\xspace}%
+% Note! Do NOT place, \xspace at end of \ggams. Why?
+% .. Doubling of \xspace like that causes a fault!
+\newcommand{\ggams}{$\cal A$\kern-.1667em\lower.5ex\hbox{$\cal M$}\kern-.125em$\cal S$}%
+
+\newcommand{\amslatex}{{\ggams\raise1.5pt\hbox{-}\LaTeX}\xspace}%
+\newcommand{\smallLaTeX}{L\kern-3pt\raise2pt\hbox{\smash{\sevenrm A}}\kern-1pt\TeX\xspace}%
+
+% ------------------------------------------------------------------
+
+\newcommand{\gsmdagger}{$^{\dagger}$}%
+\newcommand{\gsmddagger}{$^{\dagger \dagger}$}%
+% Personal define macro of GR's. Use with \grsp{}; the {} following.
+\newcommand{\grsp}{\textvisiblespace}%
+
+\newcommand{\mcgen}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{mcGEN}}}\xspace}%
+\newcommand{\hipsterrulebook}{{\setlength{\fontsize}{{\ffntsd}\baselineskip}%
+{\ffntsa\baselineskip}\ffnte{\selectfont{Hipster-\footnotesize{RuleBook}}}}\xspace}%
+
+\newcommand{\dotbar}{\_\_\_\_\_ \_\_ \_\_\_\,\xspace}%
+\newcommand{\grvfour}{\grlatex~\hspace{-1pt}{\small{v4}}\xspace}%
+\newcommand{\grvfoub}{\grlatex~\hspace{-1pt}{\small{v4.\(_2\)}}\xspace}%
+
+% ------------------------------------------------------------------
+
+% Relative sizing for scripture styling.
+% \newcommand{\ffntsb}{0.35}%
+% \newcommand{\ffntse}{0.50}%
+% \newcommand{\ffntsb}{0.45}%
+% \newcommand{\ffntse}{0.60}%
+
+% \newcommand{\ffntsb}{0.55}%
+% \newcommand{\ffntse}{0.75}%
+% ------------------------------------------------------------------
+
+\newcommand{\ffntsb}{0.45}%
+\newcommand{\ffntse}{0.60}%
+
+% For scripture styling. (phv) (pnc) (udgm) (cmr)
+% Font udgm; FAILS with textbf form!!! (of 1:)
+% Font pnc; failed with (textbf \emph), so just 'textit.' Now it works. Okay - wtv.
+\newcommand{\ffntf}{\fontfamily{pnc}}%
+
+% \newcommand{\abvvs}[1]{{\setlength{\fontsize}{{\ffntse}\baselineskip}%
+% {\ffntsb\baselineskip}\ffntf{\selectfont{#1}}}\xspace}%
+
+% 1: \newcommand{\abvvs}[1]{{\setlength{\fontsize}{{\ffntse}\baselineskip}%
+% 1: {\ffntsb\baselineskip}\ffntf\textbf{\selectfont{#1}}}\xspace}%
+% 2: \newcommand{\abvvs}[1]{{\setlength{\fontsize}{{\ffntse}\baselineskip}%
+% 2: {\ffntsb\baselineskip}\ffntf\textit{\selectfont{#1}}}\xspace}%
+
+\newcommand{\abvvs}[1]{{\setlength{\fontsize}{{\ffntse}\baselineskip}%
+{\ffntsb\baselineskip}\ffntf\textit{\selectfont{#1}}}\xspace}%
+
+
+% ============================================================
+
+% ---- end of file.
