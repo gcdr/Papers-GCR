@@ -63,8 +63,10 @@ Writing% <-- problem
 
 \pagestyle{fancy}
 \fancyhf{}              % clear all header and footer fields
-\fancyhead[R]{\thepage} % page number in upper right
+%\fancyhead[C]{\thepage} % page number in upper right
 \renewcommand{\headrulewidth}{0pt} % optional: remove header line
+\renewcommand{\footrulewidth}{0pt} % optional: remove footer line
+\fancyfoot[C]{\thepage}
 
 % ============================================================
 
@@ -84,21 +86,41 @@ Writing% <-- problem
  \newpage
  \pagenumbering{arabic}
  
-    \section{Introduction}
-    \label{sec:01}
+    \section{Presentation}
+    \label{book:01}
+ 
+    \subsection{Preface}
+    \label{sec:10}
+ 
+    \subsection{Introduction}
+    \label{sec:11}
+     
+    \subsection{Don Knuth Quote}
+    \label{sec:12}
+     
+    \subsection{Pascal's Triangle}
+    \label{sec:13}
+     
+    \subsection{Twice-Filled Pascal's Triangle}
+    \label{sec:14}
+     
+    \subsection{Rudimentary Topics}
+    \label{sec:15}
+     
+    \subsection{Teardrop Number Triangle}
+    \label{sec:16}
+     
+    \subsection{Golden Triangle}
+    \label{sec:17}
+     
+    \subsection{NTA2 Application}
+    \label{sec:18}
+     
+    \subsection{Vocabulary}
+    \label{sec:19}
+
     
-    \lipsum[1]
-    \begin{figure}
-        \centering
-        \includegraphics[width=1.0\textwidth]{pascals-triangle} % no extension needed
-        \caption{My vector figure.}
-    \end{figure}
-    
-    What else can we say here? Nice, to be typing in \LaTeX{} again.
-    Most people write raw \LaTeX{} funny. They are usually very sloppy with source lines and 
-    irregularly space everything, as they write, whatever they are writing.
-    $ \bullet $ Sometimes, auto-correct just makes things painful. Have you ever noticed that? 
-    Well, it isn't called auto-pain for nothing.
+
     
     
 \end{document}
