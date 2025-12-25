@@ -2,10 +2,11 @@
 % -
 % Copyright - Glen Ritchie 2025
 % License terms: MIT Free for template
-\documentclass[12pt]{article}
+\documentclass[14pt]{extarticle}
 \usepackage[small,sf,bf]{titlesec}%0pt
 \usepackage{amsmath,amssymb,amsfonts,latexsym}
 \usepackage[tmargin=1.0in,bmargin=1.0in,lmargin=1.0in,rmargin=1.0in]{geometry}
+% Going with 'extarticle' and 14 point, for reading script purposes.
 
 % ============================================================
 \usepackage{setspace,graphics,rotating,amsthm}
@@ -57,9 +58,17 @@ Writing% <-- problem
 % Try to avoid sfrac from xfrac package.
 \newcommand{\slfrac}[2]{\,^{#1}\!/_{#2}}
 
+\newcommand{\aacenterrule}{%
+  \begin{center}
+    \rule{1in}{0.4pt}%
+  \end{center}
+}
+
 % \setstretch{0.95}
 % \setstretch{1.00}
-\doublespacing
+%\doublespacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10.0pt}
 
 \pagestyle{fancy}
 \fancyhf{}              % clear all header and footer fields
@@ -111,11 +120,11 @@ Writing% <-- problem
      Many people have enabled me to undertake this work, and I give glory to God for it. I thank 
      my Lord Jesus.
      
-     Sincerely,
-     
-     Glen Ritchie
+     Sincerely, Glen Ritchie
      
      Bismarck, North Dakota - 2025
+
+    \aacenterrule
 
     The subject of my presentation is number triangles.
     
