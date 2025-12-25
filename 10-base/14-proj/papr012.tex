@@ -55,6 +55,8 @@ Writing% <-- problem
 
 \newcommand{\aadots}{\dots\,}%
 \newcommand{\aabart}{---\,\,}%
+\newcommand{\aawidth}{1.2}%
+% Used for figure size scale.
 
 % Try to avoid sfrac from xfrac package.
 \newcommand{\slfrac}[2]{\,^{#1}\!/_{#2}}
@@ -202,7 +204,8 @@ Writing% <-- problem
     Blaise Pascal collected results from several mathematicians who had discovered it. Then, he 
     added more findings and realized their connection to Probability and Combinatorics.
     
-        \subsubsection{RSD}    
+        \subsubsection{RSD}
+        \label{secb:10}
                
         \begin{itemize}
             \item \textit{Rising Shallow Diagonal Diagram (RSD)}
@@ -233,6 +236,7 @@ Writing% <-- problem
         \end{enumerate}
         
         \subsubsection{Number Triangle Format}
+        \label{secb:11}
         
         \begin{itemize}
             \item \textit{Difference of Centered \& Left-Justified Number Triangles}
@@ -245,6 +249,7 @@ Writing% <-- problem
         my number triangle diagrams are centered.
         
         \subsubsection{Simplex Numbers}
+        \label{secb:12}
         
         \begin{itemize}
             \item \textit{Simplex Numbers \& Simplices}
@@ -273,6 +278,7 @@ Writing% <-- problem
         beyond the Pentalope simplex numbers.
         
         \subsubsection{Geometric Relations}
+        \label{secb:13}
         
         \begin{itemize}
             \item 0D: point.
@@ -306,6 +312,7 @@ Writing% <-- problem
     not powers of $ 2 $.
 
         \subsubsection{OEIS Presence}
+        \label{secb:14}
         
         The number triangle pattern is listed in OEIS. It is a sequence 
         \url{https://oeis.org/A046854}. \\ Described as follows:
@@ -325,6 +332,7 @@ Writing% <-- problem
     \label{sec:15}
 
         \subsubsection{OEIS}
+        \label{secb:15}
         
         The On-line Encyclopedia of Integer Sequences
         
@@ -335,6 +343,7 @@ Writing% <-- problem
         origins.
         
         \subsubsection{Git \& GitHub}
+        \label{secb:16}
         
         Git and GitHub are two separate products used for revision control and for organizing 
         data repositories on GitHub.
@@ -351,6 +360,7 @@ Writing% <-- problem
         even allows ``private'' repositories to free users.
         
         \subsubsection{\LaTeX{}}
+        \label{secb:17}
         
         \LaTeX{} is a typesetting system for document publication, with a focus on high-quality 
         mathematical output.
@@ -369,6 +379,7 @@ Writing% <-- problem
     steadily.
     
         \subsubsection{Blackboard Challenge}
+        \label{secb:18}
         
         What is the basis of Teardrop? A simple question.
         
@@ -378,6 +389,7 @@ Writing% <-- problem
         \end{itemize}
         
         \subsubsection{Teardrop}
+        \label{secb:19}
         
         While the objective for Teardrop is simple. Instead of the Fibonacci numbers being the 
         solution to a Rising Shallow Diagonal? Is the goal to find the same result for Triangular 
@@ -392,6 +404,7 @@ Writing% <-- problem
         Pause.
         
         \subsubsection{``On Board'' Question}
+        \label{secb:20}
         
         Explain the ``on board'' idea for the Introduction, as a teacher would.
         
@@ -410,10 +423,12 @@ Writing% <-- problem
         \end{itemize}
         
         \subsubsection{Reveal of Teardrop Triangle}
+        \label{secb:21}
         
         Here, it is. Almost beautiful.
         
         \subsubsection{History}
+        \label{secb:22}
         
         Is this number triangle known to OEIS? It is not.
 
@@ -468,6 +483,7 @@ Writing% <-- problem
     \end{itemize}
 
         \subsubsection{General Introduction}
+        \label{secb:23}
         
         \begin{enumerate}
             \item Overview / Purpose
@@ -615,6 +631,7 @@ Writing% <-- problem
     \end{itemize}
         
         \subsubsection{Common Triangles}
+        \label{secb:24}
         
         \begin{enumerate}
             \item Bell triangle
@@ -643,6 +660,7 @@ Writing% <-- problem
         \end{enumerate}
         
         \subsubsection{Common Sequences}
+        \label{secb:25}
         
         \begin{itemize}
             \item Bell numbers
@@ -661,6 +679,7 @@ Writing% <-- problem
         \end{itemize}
     
         \subsubsection{Alias: NT}
+        \label{secb:26}
         
         \begin{itemize}
             \item Number Theory
@@ -680,39 +699,38 @@ Writing% <-- problem
 
 \onecolumn
 
-\subsection{Figures}
-
-The following pages contain the diagrams referred to in this manuscript.
-
-\newpage
-
-\begin{figure}
-    \label{fig01}
-    \centering
-    \includegraphics[width=0.7\textwidth]{pascals-triangle} % no extension needed
-    \caption{Pascal's Triangle}
-\end{figure}
-
-\begin{figure}
-    \label{fig02}
-    \centering
-    \includegraphics[width=0.7\textwidth]{pascals-diagonals} % no extension needed
-    \caption{RSD Illustration Diagram}
-\end{figure}
-
-\begin{figure}
-    \label{fig03}
-    \centering
-    \includegraphics[width=0.7\textwidth]{pascals-twice-filled} % no extension needed
-    \caption{Pascal's twice-filled number triangle}
-\end{figure}
-
-\begin{figure}
-    \label{fig04}
-    \centering
-    \includegraphics[width=0.7\textwidth]{teardrop} % no extension needed
-    \caption{Teardrop number triangle}
-\end{figure}
+    \subsection{Figures}
+    \label{sec:20}
+    
+    The following pages contain the diagrams referenced in this manuscript.
+    
+    \begin{figure}
+        \label{fig01}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{pascals-triangle} % no extension needed
+        \caption{Pascal's Triangle}
+    \end{figure}
+    
+    \begin{figure}
+        \label{fig02}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{pascals-diagonals} % no extension needed
+        \caption{RSD Illustration Diagram}
+    \end{figure}
+    
+    \begin{figure}
+        \label{fig03}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{pascals-twice-filled} % no extension needed
+        \caption{Pascal's twice-filled number triangle}
+    \end{figure}
+    
+    \begin{figure}
+        \label{fig04}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{teardrop} % no extension needed
+        \caption{Teardrop number triangle}
+    \end{figure}
 
 
 % ------------------------------------------------------------------
