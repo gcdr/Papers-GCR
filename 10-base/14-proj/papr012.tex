@@ -69,7 +69,7 @@ Writing% <-- problem
 % \setstretch{1.00}
 %\doublespacing
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{10.0pt}
+\setlength{\parskip}{6.0pt}
 
 \pagestyle{fancy}
 \fancyhf{}              % clear all header and footer fields
@@ -216,14 +216,15 @@ Writing% <-- problem
         What are the applications of RSD values? Starting with it being an actual integer 
         sequence.
         
-\begin{enumerate}
-    \item They are building blocks for infinite series. You can derive an approximate series from 
-    an exact integer sequence. Then, apply it to a numerical calculation algorithm.
-    \item Data structures and runtime analyses (big-O notation) in Computer science, often 
-    produce connections to integer sequences.
-    \item Numbers surround us. Finance, Construction patterns, or scheduling routines all involve 
-    simple integer patterns.
-\end{enumerate}
+        \begin{enumerate}
+            \item They are building blocks for infinite series. You can derive an approximate 
+            series from an exact integer sequence. Then, apply it to a numerical calculation 
+            algorithm.
+            \item Data structures and runtime analyses (big-O notation) in Computer science, 
+            often produce connections to integer sequences.
+            \item Numbers surround us. Finance, Construction patterns, or scheduling routines all 
+            involve simple integer patterns.
+        \end{enumerate}
         
         \subsubsection{Number Triangle Format}
         
@@ -243,8 +244,8 @@ Writing% <-- problem
             \item \textit{Simplex Numbers \& Simplices}
         \end{itemize}
         
-        What are the Simplex numbers? Refers to a family of "Figurate numbers" when generalizing 
-        the polygonal numbers.
+        What are the Simplex numbers? Refers to a family of ``Figurate numbers'' when 
+        generalizing the polygonal numbers.
         
         \begin{enumerate}
             \item Natural numbers
@@ -260,7 +261,7 @@ Writing% <-- problem
         
         Gradually, it becomes x times, (x+1) times, (x+2) times, etc.
         
-        Additional division by 1, 1 times 2, times 3, times 4, ..
+        Additional division by $ 1 $, $ 1 $ times $ 2 $, times $ 3 $, times $ 4 $, ..
         
         They are very special numbers in Pascal's Triangle. However, we don't see them often, 
         beyond the Pentalope simplex numbers.
@@ -280,6 +281,38 @@ Writing% <-- problem
      
     \subsection{Twice-Filled Pascal's Triangle}
     \label{sec:14}
+
+    \begin{itemize}
+        \item \textit{Twice-Filled Pascal's Triangle}
+    \end{itemize}
+    
+    What if? I would ask you to construct a triangular number array, with Fibonacci numbers as 
+    row sums and powers of $ 2 $ as the rising shallow diagonals?
+    
+    Does it exist? What would it prove? What does it look like?
+    
+    \begin{itemize}
+        \item See the diagram.
+    \end{itemize}
+    
+    First, it only calculates the odd Fibonacci numbers, not all of them.
+    
+    Second, it would imply a different kind of power series produces values of Fibonacci numbers, 
+    not powers of $ 2 $.
+
+        \subsubsection{OEIS Presence}
+        
+        The number triangle pattern is listed in OEIS. It is a sequence https://oeis.org/A046854. 
+        Described as follows:
+        
+        \begin{itemize}
+            \item Triangle read by rows: $ T(n, k) = binomial( floor( (n+k) / 2), k), 
+            n >= k >= 0 $.
+        \end{itemize}
+        
+        Is this a special number triangle? Perhaps, not. However, I find it very curious. It does 
+        exist on OEIS, and by the nature of symmetry with Pascal's Triangle. It flips the RSD and 
+        RS values, for the most part.
 
     % ------------------------------------------------------------------
 
