@@ -112,8 +112,6 @@ Writing% <-- problem
      I am writing this to explain the many number triangles that I have found. Plus, there is a 
      Number Triangle application written in Lazarus, a Pascal-derived language.
      
-     For more on the NTA2 application. See it's section.
-     
      So why study number triangles? I've been playing with Number Theory for decades. It's been 
      one of my primary interests. For instance, I wrote a paper on Pythagorean triples, which is 
      available online.
@@ -139,20 +137,26 @@ Writing% <-- problem
     Why study number triangles? The Binomial numbers and their patterns in Pascal's Triangle are 
     the answer. (Or Binomial coefficients.)
     
-    Its equation is: (fill-in)
+    \begin{equation}
+        \binom{n}{k} = \frac{{n!}}{{k!(n - k)!}}\, ,n \geqslant k \geqslant 0
+    \end{equation}
     
-    Pascal's Triangle's addition rule with Binomial numbers is:
+    Pascal's Triangle's addition rule with Binomial numbers by this recurrence relation:
     
-    (fill-in)
+    \begin{equation}
+        \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
+    \end{equation}
     
     How do you compute the Binomial numbers? Answer: It involves Factorials.
     
-    (fill-in)
+    \begin{equation}
+        n!
+    \end{equation}
     
     I will not be studying Pascal's Triangle in depth, as Don Knuth notes in the next section. 
     There are a couple of thousand known patterns in binomial numbers and Pascal's Triangle.
     
-    I will be studying the field of number triangles.
+    \textit{I will be studying the field of number triangles.}
     
     I may need two meetings, to share most everything with you?
     
@@ -166,8 +170,8 @@ Writing% <-- problem
 
     A quote on Pascal's Triangle and Binomial numbers --- discoveries.
     
-    This is from page 54 of the 3rd Edition (most recent, as of 2025) TAOCP, Vol. Fundamental 
-    Algorithms.
+    This is from page 54 of the 3rd Edition (most recent, as of 2025) The Art of Computer 
+    Programming (TAOCP), Vol. 1, Fundamental Algorithms.
     
     \begin{quote}
     \textit{Binomial coefficients satisfy literally thousands of identities, and for centuries 
@@ -177,11 +181,11 @@ Writing% <-- problem
     not many people get excited about it any more, except for the discoverer.}
     \end{quote}
     
-    Persuade you that there is still interesting material in the subject. There are many number 
-    triangles, with different patterns and types.
+    I hope to persuade you that there is still interesting material in the subject. There are 
+    many number triangles, with different patterns and types.
     
     Even though Don Knuth's quote is discouraging. I understand; mathematics is vast. It is 
-    unlikely to find anything new. Yet, I have done this.
+    unlikely to find anything new. Yet, I have.
     
     I aim to investigate patterns and structural symmetries in number triangles and determine 
     whether these patterns can be connected to integer sequences in the OEIS database.
@@ -201,7 +205,7 @@ Writing% <-- problem
         \subsubsection{RSD}    
                
         \begin{itemize}
-            \item \textit{Including Rising Shallow Diagonal Diagram (RSD)}
+            \item \textit{Rising Shallow Diagonal Diagram (RSD)}
         \end{itemize}
         
         What are they? Why is it important? How to calculate them?
@@ -522,6 +526,7 @@ Writing% <-- problem
     number triangle related, and reference.
         
     \begin{itemize}
+        \item $ \frac{1}{e} $
         \item Adobe InDesign
         \item Algebra
         \item asymptotic convergence
@@ -533,7 +538,8 @@ Writing% <-- problem
         \item difference tables
         
         \item directory, not folder
-        \item e
+        \item $ e $
+        \item $ e.g.f. $
         \item Engel expansion
         \item even bisection
         
@@ -553,7 +559,7 @@ Writing% <-- problem
         \item Hexagonal numbers, Concentric Hexagonal numbers
         
         \item Hexagonal Spiral pattern
-        \item i
+        \item $ i $
         \item Isosceles triangle
         \item \LaTeX{}
         
@@ -574,7 +580,8 @@ Writing% <-- problem
         
         \item odd bisection
         \item odd numbers
-        \item OEIS: On-Line Encyclopedia of Integer Sequences
+        \item OEIS: On-line Encyclopedia of Integer Sequences
+        \item $ o.g.f. $
         \item Padovan numbers
         
         \item Pascal's Triangle
@@ -583,7 +590,7 @@ Writing% <-- problem
         \item Pentalope numbers
         
         \item Perplexity.AI
-        \item pi
+        \item $ pi $, $ \pi $
         \item Pre-Pub Document
         \item QuickStart Guide
         
@@ -616,51 +623,67 @@ Writing% <-- problem
         \item Zotero
     \end{itemize}
         
-        \subsubsection{Common Triangles}
+    \subsubsection{Common Triangles}
+    
+    \begin{enumerate}
+        \item Bell triangle
+        \item Bernoulli triangle
+        \item Catalan's triangle
+        \item Clark's triangle
         
-        \begin{enumerate}
-            \item Bell triangle
-            \item Bernoulli triangle
-            \item Catalan's triangle
-            \item Clark's triangle
-            
-            \item Dudley triangle
-            \item Euler's number triangle
-            \item (Triangle of) Fibonomial Coefficient
-            \item Floyd's triangle
-            
-            \item Fortaliza-Tetrahedral triangle
-            \item Golden triangle
-            \item Hosoya's triangle, (Fibonacci)
-            \item Losanitsch's triangle
-            
-            \item Lucas triangle
-            \item Motzkin triangle
-            \item Narayana number triangle
-            \item Pascal's triangle
-            
-            \item Seidel-(Entringer-Arnold) triangle
-            \item Shapiro triangle
-            \item Tribonacci triangle
-        \end{enumerate}
+        \item Dudley triangle
+        \item Euler's number triangle
+        \item (Triangle of) Fibonomial Coefficient
+        \item Floyd's triangle
         
-        \subsubsection{Common Sequences}
+        \item Fortaliza-Tetrahedral triangle
+        \item Golden triangle
+        \item Hosoya's triangle, (Fibonacci)
+        \item Losanitsch's triangle
         
-        \begin{itemize}
-            \item Bell numbers
-            \item Catalan numbers
-            \item Eulerian numbers, inside? Euler's n.t.
-            \item Fibonacci numbers
-            
-            \item Jacobsthal numbers
-            \item Lucas numbers
-            \item Motzkin numbers
-            \item Natural numbers
-            
-            \item Padovan numbers
-            \item Pell numbers
-            \item Tribonacci numbers
-        \end{itemize}
+        \item Lucas triangle
+        \item Motzkin triangle
+        \item Narayana number triangle
+        \item Pascal's Triangle
+        
+        \item Seidel-(Entringer-Arnold) triangle
+        \item Shapiro triangle
+        \item Tribonacci triangle
+    \end{enumerate}
+    
+    \subsubsection{Common Sequences}
+    
+    \begin{itemize}
+        \item Bell numbers
+        \item Catalan numbers
+        \item Eulerian numbers, inside? Euler's n.t.
+        \item Fibonacci numbers
+        
+        \item Jacobsthal numbers
+        \item Lucas numbers
+        \item Motzkin numbers
+        \item Natural numbers
+        
+        \item Padovan numbers
+        \item Pell numbers
+        \item Tribonacci numbers
+    \end{itemize}
+
+    \subsubsection{Alias: NT}
+    
+    \begin{itemize}
+        \item Number Theory
+        \item Number triangle
+        \item New Testament
+        
+        \item Nice Try (online)
+        \item Northern Territory Australia, Northwest Territories Canada
+        \item Windows New Technology
+        
+        \item No Thanks (online)
+        \item Next Time (online)
+        \item nucleotide
+    \end{itemize}
 
 % ------------------------------------------------------------------
 

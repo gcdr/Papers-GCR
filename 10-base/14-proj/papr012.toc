@@ -24,4 +24,5 @@
 \contentsline {subsubsection}{\numberline {1.9.1}General Introduction}{7}{subsubsection.1.9.1}%
 \contentsline {subsection}{\numberline {1.10}Vocabulary}{9}{subsection.1.10}%
 \contentsline {subsubsection}{\numberline {1.10.1}Common Triangles}{10}{subsubsection.1.10.1}%
-\contentsline {subsubsection}{\numberline {1.10.2}Common Sequences}{10}{subsubsection.1.10.2}%
+\contentsline {subsubsection}{\numberline {1.10.2}Common Sequences}{11}{subsubsection.1.10.2}%
+\contentsline {subsubsection}{\numberline {1.10.3}Alias: NT}{11}{subsubsection.1.10.3}%
