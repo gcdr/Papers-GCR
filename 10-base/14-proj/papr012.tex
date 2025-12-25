@@ -140,18 +140,21 @@ Writing% <-- problem
     the answer. (Or Binomial coefficients.)
     
     \begin{equation}
+        \label{eq1:1}
         \binom{n}{k} = \frac{{n!}}{{k!(n - k)!}}\, ,n \geqslant k \geqslant 0
     \end{equation}
     
     Pascal's Triangle's addition rule with Binomial numbers by this recurrence relation:
     
     \begin{equation}
+        \label{eq1:2}
         \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
     \end{equation}
     
     How do you compute the Binomial numbers? Answer: It involves Factorials.
     
     \begin{equation}
+        \label{eq1:3}
         n!
     \end{equation}
     
@@ -266,14 +269,18 @@ Writing% <-- problem
             \item and more.
         \end{enumerate}
         
-        Are there patterns to them, in their formulas? Yes.
+        Are there patterns to them, in their formulas? Yes. Successive expansions of:
         
-        (fill-in)
+        \begin{equation}
+            \label{eq1:4}
+            n,n(n + 1),n(n + 1)(n + 2),n(n + 1)(n + 2)(n + 3), \ldots
+        \end{equation}
         
-        Gradually, it becomes $ x $ times, $ (x+1) $ times, $ (x+2) $ times, etc.
-        
-        Additional division by $ 1 $, $ 1 $ times $ 2 $, times $ 3 $, times $ 4 $, ..
-        
+        \begin{equation}
+        \label{eq1:5}
+            \rm{over}\quad 1!, 2!, 3!, 4!, \ldots
+        \end{equation}
+               
         They are very special numbers in Pascal's Triangle. However, we don't see them often, 
         beyond the Pentalope simplex numbers.
         
@@ -285,7 +292,7 @@ Writing% <-- problem
             \item 1D: line segment.
             \item 2D: triangle.
             \item 3D: tetrahedron
-            \item 4D: called 4-simplex, or 5-cell pentachoron, or pentatope.
+            \item 4D: called 4-simplex, or 5-cell pentachoron.
         \end{itemize}
 
     % ------------------------------------------------------------------
@@ -303,7 +310,7 @@ Writing% <-- problem
     Does it exist? What would it prove? What does it look like?
     
     \begin{itemize}
-        \item See the diagram.
+        \item See the \cref{fig01} on page \pageref{fig01}.
     \end{itemize}
     
     First, it only calculates the odd Fibonacci numbers, not all of them.
@@ -714,19 +721,26 @@ Writing% <-- problem
     \begin{figure}
         \label{fig02}
         \centering
+        \includegraphics[width=\aawidth\textwidth]{triangles-aligns} % no extension needed
+        \caption{Number Triangle Alignments}
+    \end{figure}
+       
+    \begin{figure}
+        \label{fig03}
+        \centering
         \includegraphics[width=\aawidth\textwidth]{pascals-diagonals} % no extension needed
         \caption{RSD Illustration Diagram}
     \end{figure}
     
     \begin{figure}
-        \label{fig03}
+        \label{fig04}
         \centering
         \includegraphics[width=\aawidth\textwidth]{pascals-twice-filled} % no extension needed
         \caption{Pascal's twice-filled number triangle}
     \end{figure}
     
     \begin{figure}
-        \label{fig04}
+        \label{fig05}
         \centering
         \includegraphics[width=\aawidth\textwidth]{teardrop} % no extension needed
         \caption{Teardrop number triangle}
