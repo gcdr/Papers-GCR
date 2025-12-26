@@ -1,0 +1,107 @@
+% file: xxxx.tex (tpl-41)
+% -
+% Copyright - Glen Ritchie 2025
+% License terms: MIT Free for template
+\documentclass[12pt]{article}
+\usepackage[small,sf,bf]{titlesec}%0pt
+\usepackage{amsmath,amssymb,amsfonts,latexsym}
+\usepackage[tmargin=1.0in,bmargin=1.0in,lmargin=1.0in,rmargin=1.0in]{geometry}
+
+% ============================================================
+\usepackage{setspace,graphics,rotating,amsthm}
+\usepackage{lipsum,hyperref,hyperxmp,graphicx}
+% csquotes conflicts with 'graphicx', if it is used?
+% graphicx best for PDF import with XeLaTeX or EPS with latex only build program.
+\usepackage{enumerate,xspace,calc,pifont,caption}
+
+\usepackage{tikz,pgfplots,pgfplotstable}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\newcommand*\aakeywa{%
+Writing% <-- problem
+}
+\newcommand{\aatita}{Pascal's Triangle}%
+\newcommand{\aaauta}{Glen Ritchie}%
+
+\hypersetup{
+    pdftitle    = {\aatita},
+    pdfauthor   = {\aaauta},
+    pdfsubject  = {Paper on Number Theory \& number triangles},
+    pdfkeywords = {Number Theory, number triangles, math}
+}
+
+\author{\aaauta}
+\title{\aatita}
+\newcommand{\thesubtitle}{Undefined}
+
+% ============================================================
+\usepackage{cleveref}% Important - to be last one - called.
+\usepackage{clever-ref}
+
+% ============================================================
+% (switch to other template!) \usepackage{euler-sym}
+\usepackage{plain-sym}
+\usepackage{writeB-macs}
+
+\usepackage{pdfpages}
+
+%\let\defpgsection\section
+%\renewcommand{\section}{\newpage\defpgsection}%
+% If want each section, on it's own page.
+
+\newcommand{\aadots}{\dots\,}%
+\newcommand{\aabart}{---\,\,}%
+
+% Try to avoid sfrac from xfrac package.
+\newcommand{\slfrac}[2]{\,^{#1}\!/_{#2}}
+
+% \setstretch{0.95}
+% \setstretch{1.00}
+\doublespacing
+
+\pagestyle{fancy}
+\fancyhf{}              % clear all header and footer fields
+\fancyhead[R]{\thepage} % page number in upper right
+\renewcommand{\headrulewidth}{0pt} % optional: remove header line
+
+% ============================================================
+
+\begin{document}
+ %\begin{abstract}
+ %
+ % I don't have an abstract. This is just my paper and there you go.
+ %
+ %\end{abstract}
+ %\pagestyle{empty}
+ 
+ \pagenumbering{gobble}
+
+ \maketitle   
+ 
+ %\tableofcontents
+ \newpage
+ \pagenumbering{arabic}
+ 
+    \section{Introduction}
+    \label{sec:01}
+    
+    \lipsum[1]
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{pascals-triangle} % no extension needed
+        \caption{My vector figure.}
+    \end{figure}
+    
+    What else can we say here? Nice, to be typing in \LaTeX{} again.
+    Most people write raw \LaTeX{} funny. They are usually very sloppy with source lines and 
+    irregularly space everything, as they write, whatever they are writing.
+    $ \bullet $ Sometimes, auto-correct just makes things painful. Have you ever noticed that? 
+    Well, it isn't called auto-pain for nothing.
+    
+    
+\end{document}
+
+
+

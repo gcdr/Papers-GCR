@@ -1,0 +1,774 @@
+% file: xxxx.tex (tpl-41)
+% -
+% Copyright - Glen Ritchie 2025
+% License terms: MIT Free for template
+%\documentclass[14pt]{extarticle}
+\documentclass[12pt]{article}
+\usepackage[small,sf,bf]{titlesec}%0pt
+\usepackage{amsmath,amssymb,amsfonts,latexsym}
+\usepackage[tmargin=1.0in,bmargin=1.0in,lmargin=1.0in,rmargin=1.0in]{geometry}
+% Going with 'extarticle' and 14 point, for reading script purposes.
+
+% ============================================================
+\usepackage{setspace,graphics,rotating,amsthm}
+\usepackage{lipsum,hyperref,hyperxmp,graphicx}
+% csquotes conflicts with 'graphicx', if it is used?
+% graphicx best for PDF import with XeLaTeX or EPS with latex only build program.
+\usepackage{enumerate,xspace,calc,pifont,caption}
+
+\usepackage{tikz,pgfplots,pgfplotstable}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\newcommand*\aakeywa{%
+Writing% <-- problem
+}
+\newcommand{\aatita}{The Pre-Pub Paper}%
+\newcommand{\aaauta}{Glen Ritchie}%
+
+\hypersetup{
+    pdftitle    = {\aatita},
+    pdfauthor   = {\aaauta},
+    pdfsubject  = {Paper on Number Theory \& number triangles},
+    pdfkeywords = {Number Theory, number triangles, math}
+}
+
+\author{\aaauta}
+\title{\aatita}
+\newcommand{\thesubtitle}{Undefined}
+
+% ============================================================
+\usepackage{cleveref}% Important - to be last one - called.
+\usepackage{clever-ref}
+
+% ============================================================
+% (switch to other template!) \usepackage{euler-sym}
+\usepackage{plain-sym}
+\usepackage{writeB-macs}
+
+\usepackage{pdfpages}
+
+%\let\defpgsection\section
+%\renewcommand{\section}{\newpage\defpgsection}%
+% If want each section, on it's own page.
+
+\newcommand{\aadots}{\dots\,}%
+\newcommand{\aabart}{---\,\,}%
+\newcommand{\aawidth}{1.2}%
+% Used for figure size scale.
+
+% Try to avoid sfrac from xfrac package.
+\newcommand{\slfrac}[2]{\,^{#1}\!/_{#2}}
+
+\newcommand{\aacenterrule}{%
+  \begin{center}
+    \rule{1in}{0.4pt}%
+  \end{center}
+}
+
+% \setstretch{0.95}
+% \setstretch{1.00}
+%\doublespacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6.0pt}
+
+\pagestyle{fancy}
+\fancyhf{}              % clear all header and footer fields
+%\fancyhead[C]{\thepage} % page number in upper right
+\renewcommand{\headrulewidth}{0pt} % optional: remove header line
+\renewcommand{\footrulewidth}{0pt} % optional: remove footer line
+\fancyfoot[C]{\thepage}
+
+% ============================================================
+
+\begin{document}
+ %\begin{abstract}
+ %
+ % I don't have an abstract. This is just my paper and there you go.
+ %
+ %\end{abstract}
+ %\pagestyle{empty}
+ 
+\pagenumbering{gobble}
+
+\maketitle   
+ 
+\tableofcontents
+
+\listoffigures
+ 
+\newpage
+\pagenumbering{arabic}
+ 
+    \section{Presentation}
+    \label{book:01}
+ 
+     % ------------------------------------------------------------------
+ 
+    \subsection{Preface}
+    \label{sec:10}
+ 
+     My name is Glen Ritchie. I have been a lifelong learner and student of Mathematics as a 
+     hobby.
+     
+     I graduated from NDSU (2002) with a Bachelor of Science in Computer Science.
+     
+     I am writing this to explain the many number triangles that I have found. Plus, there is a 
+     Number Triangle application written in Lazarus, a Pascal-derived language.
+     
+     So why study number triangles? I've been playing with Number Theory for decades. It's been 
+     one of my primary interests. For instance, I wrote a paper on Pythagorean triples, which is 
+     available online.
+     
+     Yet, my work on number triangles is novel.
+     
+     Many people have enabled me to undertake this work, and I give glory to God for it. I thank 
+     my Lord Jesus.
+     
+     Glen Ritchie
+     
+     Bismarck, North Dakota - 2025
+
+    \aacenterrule
+ 
+     % ------------------------------------------------------------------
+ 
+    \subsection{Introduction}
+    \label{sec:11}
+
+    The subject of my presentation is number triangles.
+
+    Why study number triangles? The Binomial numbers and their patterns in Pascal's 
+    Triangle\cite{.2013} are the answer. (Or Binomial coefficients.)\cite{Gellert.19771975}
+    
+    \begin{equation}
+        \label{eq1:i1}
+        \binom{n}{k} = \frac{{n!}}{{k!(n - k)!}}\, ,n \geqslant k \geqslant 0
+    \end{equation}
+    
+    Pascal's Triangle's addition rule with Binomial numbers by this recurrence relation:
+    
+    \begin{equation}
+        \label{eq1:i2}
+        \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
+    \end{equation}
+    
+    How do you compute the Binomial numbers? Answer: It involves Factorials.
+    
+    \begin{equation}
+        \label{eq1:i3}
+        n!
+    \end{equation}
+    
+    I will not be studying Pascal's Triangle in depth, as Don Knuth notes in the next section. 
+    There are a couple of thousand known patterns in binomial numbers and Pascal's Triangle.
+    
+    \textit{I will be studying the field of number triangles.}
+    
+    I may need two meetings, to share most everything with you?
+    
+    I have tools ranging from an explanation of how created, then a diagram, then a Windows 
+    application, plus an online dataset available to you.
+
+    % ------------------------------------------------------------------
+     
+    \subsection{Don Knuth Quote}
+    \label{sec:12}
+
+    A quote on Pascal's Triangle and Binomial numbers --- discoveries.
+    
+    This is from page 54 of the 3rd Edition (most recent, as of 2025) The Art of Computer 
+    Programming (TAOCP), Vol. 1, Fundamental Algorithms.\cite{Knuth.1997}
+    
+    \begin{quote}
+    \textit{Binomial coefficients satisfy literally thousands of identities, and for centuries 
+    their amazing properties have been continually explored.}
+    
+    \textit{In fact, there are so many relations present that when someone finds a new identity, 
+    not many people get excited about it any more, except for the discoverer.}
+    \end{quote}
+    
+    I hope to persuade you that there is still interesting material in the subject. There are 
+    many number triangles, with different patterns and types.
+    
+    Even though Don Knuth's quote is discouraging. I understand; mathematics is vast. It is 
+    unlikely to find anything new. Yet, I have.
+    
+    I aim to investigate patterns and structural symmetries in number triangles and determine 
+    whether these patterns can be connected to integer sequences in the OEIS database.
+ 
+     % ------------------------------------------------------------------
+     
+    \subsection{Pascal's Triangle}
+    \label{sec:13}
+
+    Pascal's Triangle has been realized, found, discovered, and rediscovered several times. It 
+    was known in China and the Islamic world before Pascal studied its properties and published 
+    it.
+    
+    Blaise Pascal collected results from several mathematicians who had discovered it. Then, he 
+    added more findings and realized their connection to Probability and Combinatorics. See 
+    \cref{fig01}, \nameref{fig01} on page \pageref{fig01}.
+    
+        \subsubsection{RSD}
+        \label{secb:10}
+               
+        \begin{itemize}
+            \item \textit{Rising Shallow Diagonal Diagram (RSD)}
+        \end{itemize}
+        
+        What are they? Why is it important? How to calculate them?
+        
+        I have a diagram, which shows how they are arranged. It starts on the left-hand side of a 
+        number triangle and slopes upwards. See \cref{fig03}, \nameref{fig03} on page 
+        \pageref{fig03}.
+        
+        Is there a Binomial formula? Showing the calculation of an RSD sum in Pascal's Triangle?
+        
+        \begin{equation}
+            \label{eq:e4}
+            {F_n} = \sum\limits_{k = 0}^{\left\lfloor {\left( {n - 1} \right)/2} \right\rfloor } 
+            {\binom{n - k - 1}{k}}
+        \end{equation}
+        
+        What are the applications of RSD values? Starting with it being an actual integer 
+        sequence.
+        
+        \begin{enumerate}
+            \item They are building blocks for infinite series. You can derive an approximate 
+            series from an exact integer sequence. Then, apply it to a numerical calculation 
+            algorithm.
+            
+            \item Data structures and runtime analyses (big-O notation) in Computer science, 
+            often produce connections to integer sequences.
+            
+            \item Numbers surround us. Finance, Construction patterns, or scheduling routines all 
+            involve simple integer patterns.
+        \end{enumerate}
+        
+        \subsubsection{Number Triangle Format}
+        \label{secb:11}
+        
+        \begin{itemize}
+            \item \textit{Difference of Centered \& Left-Justified Number Triangles}
+        \end{itemize}
+        
+        The following diagram, shows the difference between a centered number triangle and a 
+        left-justified number triangle. See \cref{fig02}, \nameref{fig02} on page \pageref{fig02}.
+        
+        I find the left-justified number triangle easier to read, in several ways. However, all 
+        my number triangle diagrams are centered.
+        
+        \subsubsection{Simplex Numbers}
+        \label{secb:12}
+        
+        \begin{itemize}
+            \item \textit{Simplex Numbers \& Simplices}
+        \end{itemize}
+        
+        What are the Simplex numbers? Refers to a family of ``Figurate numbers'' when 
+        generalizing the Polygonal numbers.
+        
+        \begin{enumerate}
+            \item Natural numbers
+            \item Triangular numbers
+            \item Tetrahedral numbers
+            \item Pentalope numbers
+            \item to $ \infty $
+        \end{enumerate}
+        
+        Are there patterns to them, in their formulas? Yes. Successive expansions of:
+        
+        \begin{equation}
+            \label{eq1:4}
+            n,n(n + 1),n(n + 1)(n + 2),n(n + 1)(n + 2)(n + 3), \ldots
+        \end{equation}
+        
+        \begin{equation}
+        \label{eq1:5}
+            \rm{over}\quad 1!, 2!, 3!, 4!, \ldots
+        \end{equation}
+               
+        They are very special numbers in Pascal's Triangle. However, we don't see them often, 
+        beyond the Pentalope simplex numbers.
+        
+        \subsubsection{Geometric Relations}
+        \label{secb:13}
+        
+        \begin{itemize}
+            \item 0D: Point.
+            \item 1D: Line segment.
+            \item 2D: Triangle.
+            \item 3D: Tetrahedron
+            \item 4D: called 4-simplex, or 5-cell Pentachoron.
+        \end{itemize}
+
+    % ------------------------------------------------------------------
+     
+    \subsection{Twice-Filled Pascal's Triangle}
+    \label{sec:14}
+
+    \begin{itemize}
+        \item \textit{Twice-Filled Pascal's Triangle}
+    \end{itemize}
+    
+    What if? I would ask you to construct a triangular number array, with Fibonacci numbers as 
+    row sums and powers of $ 2 $ as the rising shallow diagonals?
+    
+    Does it exist? What would it prove? What does it look like?
+    
+    \begin{itemize}
+        \item See the \cref{fig04}, \nameref{fig04} on page \pageref{fig04}.
+    \end{itemize}
+    
+    Does this imply a different kind of power series produces values of Fibonacci numbers, 
+    not powers of $ 2 $? Or are the o.g.f.s merely transposed?
+
+        \subsubsection{OEIS Presence}
+        \label{secb:14}
+        
+        The twice-filled Pascal's Triangle pattern is listed in OEIS. It is sequence 
+        \url{https://oeis.org/A046854}. Described as follows:
+        
+        \begin{itemize}
+            \item Triangle read by rows: $ T(n, k) = binomial( floor( (n+k) / 2), k), 
+            n >= k >= 0 $.
+        \end{itemize}
+        
+        Is this a special number triangle? Perhaps, not. However, I find it very curious. It does 
+        exist on OEIS, and by the nature of symmetry with Pascal's Triangle. It flips the RSD and 
+        RS values.
+
+    % ------------------------------------------------------------------
+   
+    \subsection{Rudimentary Topics}
+    \label{sec:15}
+
+        \subsubsection{OEIS}
+        \label{secb:15}
+        
+        The On-line Encyclopedia of Integer Sequences at \url{https://www.oeis.org}\,.
+        
+        It is a free database of integer sequences stored to reveal. What integer sequence 
+        connects to it?
+        
+        How is it useful? It allows anyone to identify integer sequences without knowing their 
+        origins.
+        
+        \subsubsection{Git \& GitHub}
+        \label{secb:16}
+        
+        Git and GitHub are two separate products used for revision control and for organizing 
+        data repositories on GitHub.
+        
+        Git is a tool for tracking changes in code or data and enabling collaboration.
+        
+        There are several freely available Git GUI applications. SmartGit, in particular, allows 
+        unrestricted non-commercial use of its Git client software.
+        
+        GitHub is a website where Git repositories are stored. The website fosters collaboration, 
+        with several features.
+        
+        I encourage everyone to use these free tools and apply them on their computers. GitHub 
+        even allows ``private'' repositories to free users.
+        
+        \subsubsection{\LaTeX{}}
+        \label{secb:17}
+        
+        \LaTeX{} is a typesetting system for document publication, with a focus on high-quality 
+        mathematical output.
+        
+        There is so much that anyone can say here. However, I believe it is taught on this campus 
+        by the Department of Engineering.
+        
+        If you are interested in an alternative? \verb+Typst.app+ appears to be very popular.
+
+    % ------------------------------------------------------------------
+    
+    \subsection{Teardrop Number Triangle}
+    \label{sec:16}
+
+    Why, the name Teardrop? Simple. The pattern of solving numbers tends to fall and then grow 
+    steadily.
+    
+        \subsubsection{Blackboard Challenge}
+        \label{secb:18}
+        
+        What is the basis of Teardrop? A simple question.
+        
+        \begin{itemize}
+            \item Is there a number triangle? Where the row sums (RS) don't matter and the rising 
+            shallow diagonal (RSD) equals the Triangular numbers? Find it.
+        \end{itemize}
+        
+        \subsubsection{Teardrop}
+        \label{secb:19}
+        
+        While the objective for Teardrop is simple. Instead of the Fibonacci numbers being the 
+        solution to a Rising Shallow Diagonal? Is the goal to find the same result for Triangular 
+        numbers?
+        
+        Is there such a triangle? Is it simple or complicated? Had no idea? Perhaps I was 
+        ignorant?
+        
+        However, it isn't hard. And it exists. It's not listed on OEIS. From it, I discovered a 
+        new way to construct several number triangles.
+        
+        Pause.
+        
+        \subsubsection{``On Board'' Question}
+        \label{secb:20}
+        
+        Explain the ``on board'' idea for the Introduction, as a teacher would.
+        
+        Show, demonstrate, and talk about:
+        
+        \begin{itemize}
+            \item Natural numbers
+            \item Triangular numbers
+            \item Pascal's Triangle: centered form.
+            \item Pascal's Triangle: left-justified form.
+            \item Then. Explain the challenge of Teardrop. Give someone a few minutes to guess.
+            \item We can give them a hint with: \_ = $ 1 $
+            \item \_ = $ 3 $
+            \item \_ + \_ = $ 6 $
+            \item \_ + \_ = $ 10 $, and so on.
+        \end{itemize}
+        
+        \subsubsection{Reveal of Teardrop Triangle}
+        \label{secb:21}
+        
+        Here, it is. Almost beautiful. See \cref{fig05}, \nameref{fig05} on page \pageref{fig05}.
+        
+        \subsubsection{History}
+        \label{secb:22}
+        
+        Is this number triangle known to OEIS? It is not.
+        
+        The following resources helped me over the years, to find this number triangle.
+        \cite{Graham.1994}, \cite{Wikipedia.}, \cite{Koshy.2011}, \cite{PaulBarry.2016}
+
+    % ------------------------------------------------------------------
+    
+%    \subsection{Golden Triangle}
+%    \label{sec:17}
+%
+%    What is special about the Golden triangle?
+
+    % ------------------------------------------------------------------
+    
+    \subsection{NTA2 Application}
+    \label{sec:18}
+
+    There are several features to the Number Triangle Application (version) 2.
+    
+    \begin{itemize}
+        \item Allows you to create, store, retrieve, and make RSD / RS sums calculations on a 
+        relatively large number of triangles. $ \bullet $ How many? Googol cubed times $ 1 $ 
+        trillion. Or $ {10^{100}}^3 \cdot 10^{12} $ If each cell holds a positive value from 1 to 
+        $ 10,000 $?
+        
+        \item An open-source software application for Windows 10/11. Made with Lazarus, 
+        which is also an OSS development suite, based on the Pascal computer language.
+        
+        \item There are some form-filling wizards. The most powerful is the one that takes an 
+        integer sequence (18 terms) and produces a number triangle. Where the RSD sum equals the 
+        input values. The RS sum is where the surprise happens, when there is a connection.
+        
+        \item Extensive clipboard support is provided for the RSD and RS values. This is to 
+        assist you in searching OEIS's database for matches to the sums.
+        
+        \item Computes RSD Rising Shallow Diagonals, RS Row sums, and even FSD Falling Shallow 
+        Diagonals.
+        
+        \item There is even an option to shade the RSD fields gray when some number triangle 
+        elements are missing, indicating they are incorrect.
+        
+        \item Extensive cursor moving among the elements within the main form. Tabbing moves 
+        across, and the up/down cursor moves up/down.
+        
+        \item A visual cue is left when you change the value of an element. Although, if you 
+        enter an element, then leave it. There is also a color change, and this gives you a 
+        trial. Showing where you have been, in the number triangle elements.
+        
+        \item The file format saves more than the cells in the elements. It also saves the RSD \& 
+        RS values, as well as the odd/even RSD and RS values. $ \bullet $ How is this useful? It 
+        allows ``text scanning'' of \verb+.tri+ dataset files to search for numbers using any 
+        \verb+grep+-like program, with your Operating System.
+    \end{itemize}
+
+%        \subsubsection{General Introduction}
+%        \label{secb:23}
+%        
+%        \begin{enumerate}
+%            \item Overview / Purpose
+%            \item Key Benefits
+%            \item System Requirements
+%            \begin{enumerate}
+%                \item Unfortunately, it is not made for small-resolution monitors. Scrolling 
+%bars 
+%                will appear along the window edges.
+%            \end{enumerate}
+%            
+%            \item User Interface Tour
+%            \item Common Tasks / Workflows
+%            \item Tips, Shortcuts, and Best Practices
+%            \begin{enumerate}
+%                \item The most common operation is Ctrl+F for the Zipper \& Seam Construction 
+%                Wizard.
+%            \end{enumerate}
+%            
+%            \item Troubleshooting and Support
+%        \end{enumerate}
+        
+        % A suggested descriptive title: A Triangular Array Visualizer. (TAV)
+
+        % ## Future Issues
+        %
+        % (Comment out this section in LaTeX.)
+        %
+        % 1. Target audience and user personas for this Windows app
+        % 2. Key features to highlight in the app description
+        % 3. Step-by-step user guide outline for the app
+        % 4. Common troubleshooting steps and FAQs to include
+        % 5. How to write clear installation instructions for Windows
+        % 6. How to create feature walkthrough screenshots and captions
+        % 7. Which metric to show in the app's benefits section
+        % 8. How to write a concise app elevator pitch
+        % 9. Best structure for a software user manual table of contents
+        % 10. How to write release notes and changelogs for the app
+
+    % ------------------------------------------------------------------
+     
+     \twocolumn
+     
+    \subsection{Vocabulary}
+    \label{sec:19}   
+
+    Document for standards of capitalization, in my paper, presentations, or other material 
+    number triangle related, and reference.
+        
+    \begin{itemize}
+        \item $ \frac{1}{e} $
+        \item Adobe InDesign
+        \item Algebra
+        \item asymptotic convergence
+        \item Binomial numbers (coefficients)
+        
+        \item Construction Wizard
+        \item continued fractions
+        \item convoluted sequences, convolution
+        \item difference tables
+        
+        \item directory, not folder
+        \item $ e $
+        \item $ e.g.f. $
+        \item Engel expansion
+        \item even bisection
+        
+        \item even numbers
+        \item Factorial(s)
+        \item Falling Shallow Diagonal $ \bullet $ Ignoring standards
+        \item Fibonacci numbers
+        
+        \item Figurate numbers
+        \item generating function(s)
+        \item Geometry
+        \item Git
+        
+        \item GitHub
+        \item Golden triangle, Golden number triangle
+        \item Group Theory
+        \item Hexagonal numbers, Concentric Hexagonal numbers
+        
+        \item Hexagonal Spiral pattern
+        \item $ i $
+        \item Isosceles triangle
+        \item \LaTeX{}
+        
+        \item Latin squares
+        \item Lucas numbers
+        \item Markdown article $ \bullet $ Ignoring standards
+        \item Markdown editor
+        
+        \item Math Club
+        \item MathType
+        \item MSE: Math Stack Exchange
+        \item NT Layers (of Methods)
+        
+        \item Number Theory
+        \item number sequence
+        \item number triangle: symmetric, irregular, non-symmetric
+        \item number triangle format: centered, left-justified
+        
+        \item odd bisection
+        \item odd numbers
+        \item OEIS: On-line Encyclopedia of Integer Sequences
+        \item $ o.g.f. $
+        \item Padovan numbers
+        
+        \item Pascal's Triangle
+        \item Pell numbers
+        \item Pentagonal numbers, Generalized Pentagonal numbers
+        \item Pentalope numbers
+        
+%        \item Perplexity.AI
+        \item $ pi $, $ \pi $
+        \item Polygonal numbers
+        \item Pre-Pub Document
+        \item QuickStart Guide
+        
+        \item QR-codes
+        \item reciprocal
+        \item Row Sums $ \bullet $ Ignoring standards.
+        \item RSD: Rising Shallow Diagonal $ \bullet $ Ignoring standards.
+        
+        \item Set Theory
+        \item simplex
+        \item 0-Simplex: Points.
+        \item 1-Simplex: Line segments.
+        
+        \item 2-Simplex: Triangles.
+        \item 3-Simplex: Tetrahedra.
+        \item simplices
+        \item SmartGit
+        
+        \item Teardrop triangle
+        \item TeXstudio for Windows
+        \item Triangular array
+        \item Triangular numbers, sequence
+        
+        \item Triangular Spiral pattern
+        \item Typora
+        \item Ulam's Spiral pattern
+        \item Wikipedia
+        
+        \item Zipper \& Seam method
+        \item Zotero
+    \end{itemize}
+        
+        \subsubsection{Common Triangles}
+        \label{secb:24}
+        
+        \begin{enumerate}
+            \item Bell triangle
+            \item Bernoulli triangle
+            \item Catalan's triangle
+            \item Clark's triangle
+            
+            \item Dudley triangle
+            \item Euler's number triangle
+            \item (Triangle of) Fibonomial Coefficient
+            \item Floyd's triangle
+            
+            \item Fortaliza-Tetrahedral triangle
+            \item Golden triangle
+            \item Hosoya's triangle, (Fibonacci)
+            \item Losanitsch's triangle
+            
+            \item Lucas triangle
+            \item Motzkin triangle
+            \item Narayana number triangle
+            \item Pascal's Triangle
+            
+            \item Seidel-(Entringer-Arnold) triangle
+            \item Shapiro triangle
+            \item Tribonacci triangle
+        \end{enumerate}
+        
+        \subsubsection{Common Sequences}
+        \label{secb:25}
+        
+        \begin{itemize}
+            \item Bell numbers
+            \item Catalan numbers
+            \item Eulerian numbers, inside? Euler's n.t.
+            \item Fibonacci numbers
+            
+            \item Jacobsthal numbers
+            \item Lucas numbers
+            \item Motzkin numbers
+            \item Natural numbers
+            
+            \item Padovan numbers
+            \item Pell numbers
+            \item Tribonacci numbers
+        \end{itemize}
+    
+        \subsubsection{Alias: NT}
+        \label{secb:26}
+        
+        \begin{itemize}
+            \item Number Theory
+            \item Number triangle
+            \item New Testament
+            
+            \item Nice Try (online)
+            \item Northern Territory Australia, Northwest Territories Canada
+            \item Windows New Technology
+            
+            \item No Thanks (online)
+            \item Next Time (online)
+            \item nucleotide
+        \end{itemize}
+
+% ------------------------------------------------------------------
+
+\onecolumn
+
+    \subsection{Figures}
+    \label{sec:20}
+    
+    The following pages contain the diagrams referenced in this manuscript.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{pascals-triangle} % no extension needed
+        \caption{Pascal's Triangle}\label{fig01}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{triangles-aligns} % no extension needed
+        \caption{Number Triangle Alignments}\label{fig02}
+    \end{figure}
+   
+    \begin{figure}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{pascals-diagonals} % no extension needed
+        \caption{RSD Illustration Diagram}\label{fig03}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{pascals-twice-filled} % no extension needed
+        \caption{Pascal's Twice-Filled Number Triangle}\label{fig04}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{teardrop} % no extension needed
+        \caption{Teardrop Number Triangle}\label{fig05}
+    \end{figure}
+
+    \bibliographystyle{plain}  % or alpha, abbrv, etc.
+    \bibliography{thebib}        % thebib.bib (no .bib extension)
+
+
+% ------------------------------------------------------------------
+
+% ------------------------------------------------------------------
+
+% ------------------------------------------------------------------
+
+% ------------------------------------------------------------------
+
+% ------------------------------------------------------------------
+
+% ============================================================    
+    
+\end{document}
+
+
+
