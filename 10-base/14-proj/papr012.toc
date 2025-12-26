@@ -20,9 +20,8 @@
 \contentsline {subsubsection}{\numberline {1.7.4}Reveal of Teardrop Triangle}{6}{subsubsection.1.7.4}%
 \contentsline {subsubsection}{\numberline {1.7.5}History}{6}{subsubsection.1.7.5}%
 \contentsline {subsection}{\numberline {1.8}NTA2 Application}{7}{subsection.1.8}%
-\contentsline {subsubsection}{\numberline {1.8.1}General Introduction}{7}{subsubsection.1.8.1}%
-\contentsline {subsection}{\numberline {1.9}Vocabulary}{9}{subsection.1.9}%
-\contentsline {subsubsection}{\numberline {1.9.1}Common Triangles}{10}{subsubsection.1.9.1}%
-\contentsline {subsubsection}{\numberline {1.9.2}Common Sequences}{11}{subsubsection.1.9.2}%
-\contentsline {subsubsection}{\numberline {1.9.3}Alias: NT}{11}{subsubsection.1.9.3}%
-\contentsline {subsection}{\numberline {1.10}Figures}{12}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.9}Vocabulary}{8}{subsection.1.9}%
+\contentsline {subsubsection}{\numberline {1.9.1}Common Triangles}{9}{subsubsection.1.9.1}%
+\contentsline {subsubsection}{\numberline {1.9.2}Common Sequences}{10}{subsubsection.1.9.2}%
+\contentsline {subsubsection}{\numberline {1.9.3}Alias: NT}{10}{subsubsection.1.9.3}%
+\contentsline {subsection}{\numberline {1.10}Figures}{11}{subsection.1.10}%
