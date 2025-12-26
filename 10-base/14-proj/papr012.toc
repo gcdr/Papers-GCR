@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {1.7}Teardrop Number Triangle}{5}{subsection.1.7}%
 \contentsline {subsubsection}{\numberline {1.7.1}Blackboard Challenge}{5}{subsubsection.1.7.1}%
 \contentsline {subsubsection}{\numberline {1.7.2}Teardrop}{5}{subsubsection.1.7.2}%
-\contentsline {subsubsection}{\numberline {1.7.3}"On Board" Question}{6}{subsubsection.1.7.3}%
+\contentsline {subsubsection}{\numberline {1.7.3}``On Board'' Question}{6}{subsubsection.1.7.3}%
 \contentsline {subsubsection}{\numberline {1.7.4}Reveal of Teardrop Triangle}{6}{subsubsection.1.7.4}%
 \contentsline {subsubsection}{\numberline {1.7.5}History}{6}{subsubsection.1.7.5}%
 \contentsline {subsection}{\numberline {1.8}NTA2 Application}{6}{subsection.1.8}%

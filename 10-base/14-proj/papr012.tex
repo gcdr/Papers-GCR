@@ -143,21 +143,21 @@ Writing% <-- problem
     the answer. (Or Binomial coefficients.)
     
     \begin{equation}
-        \label{eq1:1}
+        \label{eq1:i1}
         \binom{n}{k} = \frac{{n!}}{{k!(n - k)!}}\, ,n \geqslant k \geqslant 0
     \end{equation}
     
     Pascal's Triangle's addition rule with Binomial numbers by this recurrence relation:
     
     \begin{equation}
-        \label{eq1:2}
+        \label{eq1:i2}
         \binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}
     \end{equation}
     
     How do you compute the Binomial numbers? Answer: It involves Factorials.
     
     \begin{equation}
-        \label{eq1:3}
+        \label{eq1:i3}
         n!
     \end{equation}
     
@@ -220,11 +220,15 @@ Writing% <-- problem
         What are they? Why is it important? How to calculate them?
         
         I have a diagram, which shows how they are arranged. It starts on the left-hand side of a 
-        number triangle and slopes upwards.
+        number triangle and slopes upwards. See \cref{fig03} on page \pageref{fig03}.
         
         Is there a Binomial formula? Showing the calculation of an RSD sum in Pascal's Triangle?
         
-        (fill-in)
+        \begin{equation}
+            \label{eq:e4}
+            {F_n} = \sum\limits_{k = 0}^{\left\lfloor {\left( {n - 1} \right)/2} \right\rfloor } 
+            {\binom{n - k - 1}{k}}
+        \end{equation}
         
         What are the applications of RSD values? Starting with it being an actual integer 
         sequence.
@@ -249,7 +253,7 @@ Writing% <-- problem
         \end{itemize}
         
         The following diagram, shows the difference between a centered number triangle and a 
-        left-justified number triangle.
+        left-justified number triangle. See \cref{fig02} on page \pageref{fig02}.
         
         I find the left-justified number triangle easier to read, in several ways. However, all 
         my number triangle diagrams are centered.
@@ -262,14 +266,14 @@ Writing% <-- problem
         \end{itemize}
         
         What are the Simplex numbers? Refers to a family of ``Figurate numbers'' when 
-        generalizing the polygonal numbers.
+        generalizing the Polygonal numbers.
         
         \begin{enumerate}
             \item Natural numbers
             \item Triangular numbers
             \item Tetrahedral numbers
             \item Pentalope numbers
-            \item and more.
+            \item to $ \infty $
         \end{enumerate}
         
         Are there patterns to them, in their formulas? Yes. Successive expansions of:
@@ -291,11 +295,11 @@ Writing% <-- problem
         \label{secb:13}
         
         \begin{itemize}
-            \item 0D: point.
-            \item 1D: line segment.
-            \item 2D: triangle.
-            \item 3D: tetrahedron
-            \item 4D: called 4-simplex, or 5-cell pentachoron.
+            \item 0D: Point.
+            \item 1D: Line segment.
+            \item 2D: Triangle.
+            \item 3D: Tetrahedron
+            \item 4D: called 4-simplex, or 5-cell Pentachoron.
         \end{itemize}
 
     % ------------------------------------------------------------------
@@ -313,7 +317,7 @@ Writing% <-- problem
     Does it exist? What would it prove? What does it look like?
     
     \begin{itemize}
-        \item See the \cref{fig01} on page \pageref{fig01}.
+        \item See the \cref{fig04} on page \pageref{fig04}.
     \end{itemize}
     
     Does this imply a different kind of power series produces values of Fibonacci numbers, 
@@ -323,7 +327,7 @@ Writing% <-- problem
         \label{secb:14}
         
         The twice-filled Pascal's Triangle pattern is listed in OEIS. It is sequence 
-        \url{https://oeis.org/A046854}. \\ Described as follows:
+        \url{https://oeis.org/A046854}. Described as follows:
         
         \begin{itemize}
             \item Triangle read by rows: $ T(n, k) = binomial( floor( (n+k) / 2), k), 
@@ -376,7 +380,7 @@ Writing% <-- problem
         There is so much that anyone can say here. However, I believe it is taught on this campus 
         by the Department of Engineering.
         
-        If you are interested in an alternative? \textit{Typst.app} appears to be very popular.
+        If you are interested in an alternative? \verb+Typst.app+ appears to be very popular.
 
     % ------------------------------------------------------------------
     
@@ -411,7 +415,7 @@ Writing% <-- problem
         
         Pause.
         
-        \subsubsection{"On Board" Question}
+        \subsubsection{``On Board'' Question}
         \label{secb:20}
         
         Explain the ``on board'' idea for the Introduction, as a teacher would.
@@ -433,7 +437,7 @@ Writing% <-- problem
         \subsubsection{Reveal of Teardrop Triangle}
         \label{secb:21}
         
-        Here, it is. Almost beautiful.
+        Here, it is. Almost beautiful. See \cref{fig05} on page \pageref{fig05}.
         
         \subsubsection{History}
         \label{secb:22}
@@ -603,8 +607,9 @@ Writing% <-- problem
         \item Pentagonal numbers, Generalized Pentagonal numbers
         \item Pentalope numbers
         
-        \item Perplexity.AI
+%        \item Perplexity.AI
         \item $ pi $, $ \pi $
+        \item Polygonal numbers
         \item Pre-Pub Document
         \item QuickStart Guide
         
@@ -736,14 +741,14 @@ Writing% <-- problem
         \label{fig04}
         \centering
         \includegraphics[width=\aawidth\textwidth]{pascals-twice-filled} % no extension needed
-        \caption{Pascal's twice-filled number triangle}
+        \caption{Pascal's Twice-Filled Number Triangle}
     \end{figure}
 
     \begin{figure}
         \label{fig05}
         \centering
         \includegraphics[width=\aawidth\textwidth]{teardrop} % no extension needed
-        \caption{Teardrop number triangle}
+        \caption{Teardrop Number Triangle}
     \end{figure}
 
 
