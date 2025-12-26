@@ -1,14 +1,39 @@
 \begin{thebibliography}{1}
 
+\bibitem{.2013}
+{\em Handbook of mathematical functions: With formulas, graphs, and
+  mathematical tables}.
+\newblock Dover books on mathematics. {Dover Publ}, New York, NY, 9. dover
+  print.; [nachdr. der ausg. von 1972] edition, 2013.
+
 \bibitem{Gellert.19771975}
 Walter Gellert.
 \newblock {\em The VNR concise encyclopedia of mathematics}.
 \newblock {Van Nostrand Reinhold Co}, New York, 1st american ed. edition, 1977,
   1975.
 
+\bibitem{Graham.1994}
+Ronald~L. Graham, Donald~Ervin Knuth, and Oren Patashnik.
+\newblock {\em Concrete mathematics: A foundation for computer science}.
+\newblock Addison-Wesley, Reading Mass., 2nd ed. edition, 1994.
+
 \bibitem{Knuth.1997}
 Donald~Ervin Knuth.
 \newblock {\em The art of computer programming}.
 \newblock Addison-Wesley, Reading Mass., 3rd ed. edition, 1997.
+
+\bibitem{Koshy.2011}
+Thomas Koshy.
+\newblock {\em Triangular arrays with applications}.
+\newblock {Oxford University Press}, Oxford and New York, 2011.
+
+\bibitem{PaulBarry.2016}
+{Paul Barry}.
+\newblock {\em Riordan Arrays: A Primer}.
+\newblock First edition, 2016.
+
+\bibitem{Wikipedia.}
+Wikipedia.
+\newblock Figurate number: Gnomon.
 
 \end{thebibliography}

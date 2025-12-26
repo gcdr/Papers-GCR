@@ -5,44 +5,48 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Database file #1: thebib.bib
-You've used 2 entries,
+Warning--to sort, need author, editor, or key in .2013
+Warning--empty author and editor in .2013
+Warning--empty publisher in PaulBarry.2016
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            514 strings with 4282 characters,
-and the built_in function-call counts, 478 in all, are:
-= -- 44
-> -- 14
+            545 strings with 4916 characters,
+and the built_in function-call counts, 1608 in all, are:
+= -- 149
+> -- 54
 < -- 0
-+ -- 8
-- -- 4
-* -- 24
-:= -- 89
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 8
++ -- 25
+- -- 16
+* -- 85
+:= -- 276
+add.period$ -- 20
+call.type$ -- 7
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 24
-empty$ -- 45
-format.name$ -- 4
-if$ -- 99
+cite$ -- 10
+duplicate$ -- 80
+empty$ -- 157
+format.name$ -- 16
+if$ -- 344
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 4
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 12
+int.to.str$ -- 7
+missing$ -- 11
+newline$ -- 36
+num.names$ -- 12
+pop$ -- 46
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 22
 quote$ -- 0
-skip$ -- 12
+skip$ -- 46
 stack$ -- 0
-substring$ -- 12
-swap$ -- 2
+substring$ -- 37
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 4
-width$ -- 3
-write$ -- 26
+type$ -- 16
+warning$ -- 3
+while$ -- 12
+width$ -- 8
+write$ -- 77
+(There were 3 warnings)
