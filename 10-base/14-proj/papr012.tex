@@ -57,6 +57,8 @@ Writing% <-- problem
 \newcommand{\aabart}{---\,\,}%
 \newcommand{\aawidth}{1.2}%
 % Used for figure size scale.
+\newcommand{\aaheight}{0.45}%
+% Used for ratio height paper size / scale.
 
 % Try to avoid sfrac from xfrac package.
 \newcommand{\slfrac}[2]{\,^{#1}\!/_{#2}}
@@ -140,7 +142,7 @@ Writing% <-- problem
     The subject of my presentation is number triangles.
 
     Why study number triangles? The Binomial numbers and their patterns in Pascal's 
-    Triangle\cite{.2013} are the answer. (Or Binomial coefficients.)\cite{Gellert.19771975}
+    Triangle\cite{.2013} are an answer. (Or Binomial coefficients.)\cite{Gellert.19771975}
     
     \begin{equation}
         \label{eq1:i1}
@@ -206,6 +208,11 @@ Writing% <-- problem
     Pascal's Triangle has been realized, found, discovered, and rediscovered several times. It 
     was known in China and the Islamic world before Pascal studied its properties and published 
     it.
+    
+    \begin{equation}
+        \label{eq:e2}
+        n = 5,k = 2,\binom{5}{2} = \frac{{5!}}{{2!\cdot (5 - 2)!}} = \frac{{120}}{{2 \cdot 6}}
+    \end{equation}
     
     Blaise Pascal collected results from several mathematicians who had discovered it. Then, he 
     added more findings and realized their connection to Probability and Combinatorics. See 
@@ -727,29 +734,41 @@ Writing% <-- problem
         \includegraphics[width=\aawidth\textwidth]{pascals-triangle} % no extension needed
         \caption{Pascal's Triangle}\label{fig01}
     \end{figure}
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=\aawidth\textwidth]{pascals-triangle} % no extension needed
+        \caption{Pascal's Labeled Triangle}\label{fig02}
+    \end{figure}
 
     \begin{figure}
         \centering
         \includegraphics[width=\aawidth\textwidth]{triangles-aligns} % no extension needed
-        \caption{Number Triangle Alignments}\label{fig02}
+        \caption{Number Triangle Alignments}\label{fig03}
+    \end{figure}
+ 
+     \begin{figure}
+        \centering
+        \includegraphics[width=\aaheight\paperheight]{assets/nta2-view01} % no extension needed
+        \caption{NTA2 Application Interface From}\label{fig04}
     \end{figure}
    
     \begin{figure}
         \centering
         \includegraphics[width=\aawidth\textwidth]{pascals-diagonals} % no extension needed
-        \caption{RSD Illustration Diagram}\label{fig03}
+        \caption{RSD Illustration Diagram}\label{fig05}
     \end{figure}
 
     \begin{figure}
         \centering
         \includegraphics[width=\aawidth\textwidth]{pascals-twice-filled} % no extension needed
-        \caption{Pascal's Twice-Filled Number Triangle}\label{fig04}
+        \caption{Pascal's Twice-Filled Number Triangle}\label{fig06}
     \end{figure}
 
     \begin{figure}
         \centering
         \includegraphics[width=\aawidth\textwidth]{teardrop} % no extension needed
-        \caption{Teardrop Number Triangle}\label{fig05}
+        \caption{Teardrop Number Triangle}\label{fig07}
     \end{figure}
 
     \bibliographystyle{plain}  % or alpha, abbrv, etc.
