@@ -149,7 +149,8 @@ Writing% <-- problem
         \binom{n}{k} = \frac{{n!}}{{k!(n - k)!}}\, ,n \geqslant k \geqslant 0
     \end{equation}
     
-    Pascal's Triangle's addition rule with Binomial numbers by this recurrence relation:
+    Pascal's Triangle's addition rule is symbolized by Binomial numbers with this recurrence 
+    relation equation:
     
     \begin{equation}
         \label{eq1:i2}
@@ -184,8 +185,9 @@ Writing% <-- problem
     Programming (TAOCP), Vol. 1, Fundamental Algorithms.\cite{Knuth.1997}
     
     \begin{quote}
-    \textit{Binomial coefficients satisfy literally thousands of identities, and for centuries 
-    their amazing properties have been continually explored.}
+    \textit{Binomial coefficients satisfy literally thousands of identities,\footnote{An identity 
+    in mathematics is an equation that holds true for every permissible value of its variables.} 
+    and for centuries their amazing properties have been continually explored.}
     
     \textit{In fact, there are so many relations present that when someone finds a new identity, 
     not many people get excited about it any more, except for the discoverer.}
@@ -214,9 +216,9 @@ Writing% <-- problem
         n = 5,k = 2,\binom{5}{2} = \frac{{5!}}{{2!\cdot (5 - 2)!}} = \frac{{120}}{{2 \cdot 6}}
     \end{equation}
     
-    Blaise Pascal collected results from several mathematicians who had discovered it. Then, he 
-    added more findings and realized their connection to Probability and Combinatorics. See 
-    \cref{fig01}, \nameref{fig01} on page \pageref{fig01}.
+    Blaise Pascal collected results from several mathematicians who had discovered Pascal's 
+    Triangle. Then, he added more findings and realized their connection to Probability and 
+    Combinatorics. See \cref{fig01}, \nameref{fig01} on page \pageref{fig01}.
     
         \subsubsection{RSD}
         \label{secb:10}
@@ -231,13 +233,13 @@ Writing% <-- problem
         number triangle and slopes upwards. See \cref{fig03}, \nameref{fig03} on page 
         \pageref{fig03}.
         
-        Is there a Binomial formula? Showing the calculation of an RSD sum in Pascal's Triangle?
+        Is there a Binomial formula? Yes. I don't intend to show it. Since, it isn't intuitive.
         
-        \begin{equation}
-            \label{eq:e4}
-            {F_n} = \sum\limits_{k = 0}^{\left\lfloor {\left( {n - 1} \right)/2} \right\rfloor } 
-            {\binom{n - k - 1}{k}}
-        \end{equation}
+%        \begin{equation}
+%            \label{eq:e4}
+%            {F_n} = \sum\limits_{k = 0}^{\left\lfloor {\left( {n - 1} \right)/2} \right\rfloor } 
+%            {\binom{n - k - 1}{k}}
+%        \end{equation}
         
         What are the applications of RSD values? Starting with it being an actual integer 
         sequence.
@@ -249,9 +251,6 @@ Writing% <-- problem
             
             \item Data structures and runtime analyses (big-O notation) in Computer science, 
             often produce connections to integer sequences.
-            
-            \item Numbers surround us. Finance, Construction patterns, or scheduling routines all 
-            involve simple integer patterns.
         \end{enumerate}
         
         \subsubsection{Number Triangle Format}
@@ -304,11 +303,11 @@ Writing% <-- problem
         \label{secb:13}
         
         \begin{itemize}
-            \item 0D: Point.
-            \item 1D: Line segment.
-            \item 2D: Triangle.
-            \item 3D: Tetrahedron
-            \item 4D: called 4-simplex, or 5-cell Pentachoron.
+            \item zero-dimensional: Point.
+            \item one-dimensional: Line segment.
+            \item two-dimensional: Triangle.
+            \item three-dimensional: Tetrahedron
+            \item four-dimensional: called 4-simplex, or 5-cell Pentachoron.
         \end{itemize}
 
     % ------------------------------------------------------------------
@@ -737,7 +736,7 @@ Writing% <-- problem
     
     \begin{figure}
         \centering
-        \includegraphics[width=\aawidth\textwidth]{pascals-triangle} % no extension needed
+        \includegraphics[width=\aawidth\textwidth]{assets/pascals-view02} % no extension needed
         \caption{Pascal's Labeled Triangle}\label{fig02}
     \end{figure}
 
