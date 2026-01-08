@@ -49,8 +49,8 @@ Writing% <-- problem
 
 \usepackage{pdfpages}
 
-\let\defpgsection\subsection
-\renewcommand{\subsection}{\newpage\defpgsection}%
+%\let\defpgsection\subsection
+%\renewcommand{\subsection}{\newpage\defpgsection}%
 % If want each section, on it's own page.
 
 \newcommand{\aadots}{\dots\,}%
@@ -226,14 +226,14 @@ Writing% <-- problem
         \label{secb:10}
                
         \begin{itemize}
-            \item \textit{Rising Shallow Diagonal Diagram (RSD)}
+            \item \textit{Rising Shallow Diagonal Sum (RSD)}
         \end{itemize}
         
         What are they? Why is it important? How to calculate them?
         
         I have a diagram, which shows how they are arranged. It starts on the left-hand side of a 
-        number triangle and slopes upwards. See \cref{fig05b}, \nameref{fig05b} on page 
-        \pageref{fig05b}.
+        number triangle and slopes upwards to the right side. See \cref{fig05b}, \nameref{fig05b} 
+        on page \pageref{fig05b}.
         
         Is there a Binomial formula? Yes. I don't intend to show it. Since, it isn't intuitive.
         
@@ -254,6 +254,15 @@ Writing% <-- problem
             \item Data structures and runtime analyses (big-O notation) in Computer science, 
             often produce connections to integer sequences.
         \end{enumerate}
+        
+        \subsubsection{RS}
+        \label{secb:10b}
+        
+        \begin{itemize}
+             \item \textit{Row Sum (RS)}
+        \end{itemize}
+         
+        The sum of a row, for each number triangle.
         
         \subsubsection{Number Triangle Format}
         \label{secb:11}
