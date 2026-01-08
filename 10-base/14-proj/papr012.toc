@@ -7,19 +7,19 @@
 \contentsline {subsubsection}{\numberline {1.4.2}Number Triangle Format}{5}{subsubsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {1.4.3}Simplex Numbers}{5}{subsubsection.1.4.3}%
 \contentsline {subsubsection}{\numberline {1.4.4}Geometric Relations}{6}{subsubsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.5}Twice-Filled Pascal's Triangle}{7}{subsection.1.5}%
-\contentsline {subsubsection}{\numberline {1.5.1}OEIS Presence}{7}{subsubsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.6}Rudimentary Topics}{8}{subsection.1.6}%
-\contentsline {subsubsection}{\numberline {1.6.1}OEIS}{8}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}Git \& GitHub}{8}{subsubsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.3}\LaTeX {}}{8}{subsubsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.7}Teardrop Number Triangle}{9}{subsection.1.7}%
-\contentsline {subsubsection}{\numberline {1.7.1}Blackboard Challenge}{9}{subsubsection.1.7.1}%
-\contentsline {subsubsection}{\numberline {1.7.2}Teardrop}{9}{subsubsection.1.7.2}%
-\contentsline {subsubsection}{\numberline {1.7.3}``On Board'' Question}{9}{subsubsection.1.7.3}%
-\contentsline {subsubsection}{\numberline {1.7.4}Reveal of Teardrop Triangle}{10}{subsubsection.1.7.4}%
-\contentsline {subsubsection}{\numberline {1.7.5}History}{10}{subsubsection.1.7.5}%
-\contentsline {subsection}{\numberline {1.8}NTA2 Application}{11}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.5}NTA2 Application}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Twice-Filled Pascal's Triangle}{8}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}OEIS Presence}{8}{subsubsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.7}Rudimentary Topics}{9}{subsection.1.7}%
+\contentsline {subsubsection}{\numberline {1.7.1}OEIS}{9}{subsubsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.2}Git \& GitHub}{9}{subsubsection.1.7.2}%
+\contentsline {subsubsection}{\numberline {1.7.3}\LaTeX {}}{9}{subsubsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.8}Teardrop Number Triangle}{10}{subsection.1.8}%
+\contentsline {subsubsection}{\numberline {1.8.1}Blackboard Challenge}{10}{subsubsection.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.8.2}Teardrop}{10}{subsubsection.1.8.2}%
+\contentsline {subsubsection}{\numberline {1.8.3}``On Board'' Question}{10}{subsubsection.1.8.3}%
+\contentsline {subsubsection}{\numberline {1.8.4}Reveal of Teardrop Triangle}{11}{subsubsection.1.8.4}%
+\contentsline {subsubsection}{\numberline {1.8.5}History}{11}{subsubsection.1.8.5}%
 \contentsline {subsection}{\numberline {1.9}Vocabulary}{12}{subsection.1.9}%
 \contentsline {subsubsection}{\numberline {1.9.1}Common Triangles}{13}{subsubsection.1.9.1}%
 \contentsline {subsubsection}{\numberline {1.9.2}Common Sequences}{14}{subsubsection.1.9.2}%
